@@ -1,0 +1,19 @@
+{
+  "utc": "20260502T051222Z",
+  "checkpoint_dir": "/content/drive/MyDrive/facial_pain_project_v2/checkpoints_v2.9/v2.9_20260222_144752",
+  "ckpt_kind": "task2",
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "manifest_csv": "/content/drive/MyDrive/cow_face_sequences_10s_250/completed_manifest.csv",
+  "sequence_root": "/content/drive/MyDrive/cow_face_sequences_10s_250",
+  "predictions_csv": "/content/drive/MyDrive/baseline/holstein_zero_shot_outputs_144752/holstein_zero_shot_predictions_20260502T051222Z.csv"
+}

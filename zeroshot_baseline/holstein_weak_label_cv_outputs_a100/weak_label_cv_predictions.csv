@@ -1,0 +1,222 @@
+fold,split,sequence_index,cow_id,target,target_label,health_condition,dataset_root,relative_path,detected_frames,filled_frames,mean_detection_confidence,pain_logit,pain_prob
+0,val,6,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 7/402.mov,240,0,0.9249715042610963,-0.30428045988082886,0.4245114241146482
+0,val,9,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 10/374.mov,240,0,0.9354109381635983,-0.31411463022232056,0.42211072334575733
+0,val,11,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"March 24 2025/Before exercise/433/Video 2025-03-24, 7 12 23 AM.mov",232,8,0.9055813211819221,-0.23160140216350555,0.4423570794656963
+0,val,19,432,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 4/432.mov,240,0,0.9074539872507255,-0.2738514542579651,0.43196181406330864
+0,val,38,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 29/402.mov,220,20,0.8583921828053215,-0.28356480598449707,0.42958003392308264
+0,val,41,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 7/374.mov,240,0,0.9324015706777573,-0.30889248847961426,0.4233850928605195
+0,val,43,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"17 March 2025/After exercise/433/Video 2025-03-17, 8 47 40 AM.mov",240,0,0.9380414597690105,-0.308447003364563,0.42349385292142383
+0,val,51,432,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 8/432.mov,240,0,0.9269799560308456,-0.2860018014907837,0.42898297279709824
+0,val,70,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 10/402.mov,240,0,0.9385054714977741,-0.31630563735961914,0.4215763552376702
+0,val,73,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 7/374.mov,240,0,0.9254625787337621,-0.31526243686676025,0.42183076018841625
+0,val,75,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/After Exercise/433/Video 2025-02-27, 3 51 28 PM.mov",240,0,0.938522698233525,-0.31364157795906067,0.42222612077650723
+0,val,82,432,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 5/432.mov,240,0,0.9382756993174552,-0.340912789106369,0.41558776673092
+0,val,99,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 29/402.mov,240,0,0.931898154815038,-0.25051745772361755,0.4376961392325256
+0,val,102,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 29/374.mov,231,9,0.9165891452785179,-0.2919687330722809,0.427521957078521
+0,val,104,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"21 Feb 2025/Before Exercise/433/Video 2025-02-21, 8 45 57 AM.mov",240,0,0.9260673398772875,-0.012192117981612682,0.49695200826092717
+0,val,111,432,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 4/432.mov,240,0,0.9305532145003478,-0.3002151846885681,0.4255048803455141
+0,val,128,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 26/402.mov,240,0,0.9336460113525391,-0.3259357213973999,0.41922985210157426
+0,val,131,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 5/374.mov,240,0,0.9113782299061616,-0.30596739053726196,0.4240993570391956
+0,val,133,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"7 March 2025/After Exercise/433/Video 2025-03-07, 7 50 08 AM.mov",240,0,0.9389747234682242,-0.3095848560333252,0.42321607403408973
+0,val,139,432,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 5/432.mov,240,0,0.9230889822045962,-0.27266237139701843,0.4322536038547142
+0,val,155,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 5/402.mov,240,0,0.9358728763957819,-0.30065667629241943,0.42539696106340286
+0,val,157,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 28/374.mov,240,0,0.9330345896383127,-0.31726133823394775,0.4213433253188716
+0,val,159,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/Before Exercise/433/Video 2025-02-19, 8 48 28 AM.mov",240,0,0.9359229035675526,-0.2825769782066345,0.42982210907737056
+0,val,165,432,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 8/432.mov,240,0,0.9067770875990391,-0.3164840042591095,0.42153286112556093
+0,val,180,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 1/402.mov,240,0,0.9178536708156267,-0.24253316223621368,0.43966218746819574
+0,val,182,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 10/374.mov,235,5,0.8498713445156179,-0.29148411750793457,0.4276405694155383
+0,val,184,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"March 19 2025/During exercise/433/Video 2025-03-19, 7 37 49 AM.mov",240,0,0.9192602768540382,-0.18716645240783691,0.45334450758161776
+0,val,199,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 5/402.mov,240,0,0.925056728720665,-0.2034785896539688,0.44930514419813944
+0,val,201,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 29/374.mov,240,0,0.9323522162934145,-0.32836776971817017,0.41863782284726164
+0,val,203,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/During Exercise/433/Video 2025-02-19, 9 20 37 AM.mov",240,0,0.9084170666833719,-0.20654915273189545,0.4485455135210344
+0,val,216,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 7/402.mov,240,0,0.9178457371890545,-0.2956962585449219,0.42660990411000604
+0,val,218,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 5/374.mov,234,6,0.8959838995057293,-0.3034941554069519,0.4247035308503279
+0,val,220,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/After Exercise/433/Video 2025-02-20, 9 48 55 AM.mov",240,0,0.8899568190177282,-0.27689486742019653,0.43121520450043144
+0,val,232,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 25/402.mov,240,0,0.9409855763117473,-0.2545669674873352,0.4366997338162409
+0,val,234,374,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 28/374.mov,240,0,0.9422747530043125,-0.3051479458808899,0.42429950989592075
+0,val,236,433,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/After Exercise/433/Video 2025-02-24, 10 37 28 AM.mov",240,0,0.9406838089227676,-0.2533801794052124,0.4369916973666816
+0,val,248,402,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 28/402.mov,240,0,0.9362019119163354,-0.28292030096054077,0.4297379712596278
+1,val,3,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"28 Feb 2025/After Exercise/310/Video 2025-02-28, 9 59 51 AM.mov",240,0,0.9342046479384104,-0.17708811163902283,0.4558433087073094
+1,val,15,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"12 March 2025/After exercise/417/Video 2025-03-12, 8 10 02 AM.mov",240,0,0.9244140026470026,-0.2585586905479431,0.43571804693415045
+1,val,16,427,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 8/427- lameness.mov,240,0,0.9299181406696637,-0.31629833579063416,0.42157813572432945
+1,val,17,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"12 March 2025/After exercise/378/Video 2025-03-12, 8 08 18 AM.mov",240,0,0.922410644342502,-0.28698480129241943,0.4287421973535884
+1,val,35,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/Before Exercise/310/Video 2025-02-24, 8 58 07 AM.mov",240,0,0.9358627900481225,-0.1980690211057663,0.45064399781358233
+1,val,47,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"March 24 2025/After exercise/417/Video 2025-03-24, 7 58 46 AM.mov",240,0,0.921450388431549,-0.3116229474544525,0.42271864531581765
+1,val,48,427,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 4/427- lameness.mov,240,0,0.9348571506639322,-0.2596501111984253,0.4354497205586949
+1,val,49,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"7 March 2025/Before Exercise/378/Video 2025-03-07, 6 21 02 AM.mov",240,0,0.9378780769805114,-0.292785108089447,0.4273221636293791
+1,val,67,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"17 March 2025/Before exercise/310/Video 2025-03-17, 7 06 35 AM.mov",240,0,0.9214439620574315,-0.11667422950267792,0.47086448663846125
+1,val,78,417,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows after exercise/Sep 8/417- fresh cows .mov,240,0,0.8719493227700392,-0.2708369493484497,0.43270163673885464
+1,val,79,427,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 8/427- lameness.mov,240,0,0.9333582714200019,-0.3276779353618622,0.41880572428524554
+1,val,80,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/During Exercise/378/Video 2025-02-20, 9 29 50 AM.mov",240,0,0.8809574571748574,-0.03319035470485687,0.49170317295827953
+1,val,96,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/Before Exercise/310/Video 2025-02-27, 2 45 31 PM.mov",240,0,0.9483591350416343,-0.307288259267807,0.4237767816458967
+1,val,107,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/Before Exercise/417/Video 2025-02-20, 8 47 36 AM.mov",240,0,0.9251001996298631,-0.289304256439209,0.4281742051369866
+1,val,108,427,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 5/427- lameness.mov,240,0,0.9237723007798195,-0.23762676119804382,0.4408712807471221
+1,val,109,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"6 March 2025/During Exercise/378/Video 2025-03-06, 7 10 01 AM.mov",240,0,0.9053575110932192,-0.2603725790977478,0.4352721222088439
+1,val,125,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/During Exercise/310/Video 2025-02-19, 9 27 32 AM.mov",240,0,0.9321006392439206,0.2005125880241394,0.5499608680998214
+1,val,135,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"21 Feb 2025/During Exercise/417/Video 2025-02-21, 9 21 06 AM.mov",202,38,0.786683981961543,-0.08434295654296875,0.4789267518407609
+1,val,136,427,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 4/427-lameness.mov,240,0,0.9374050877988338,-0.29883936047554016,0.4258412356515947
+1,val,137,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"10 March 2025/During exercise/378/Video 2025-03-10, 7 01 58 AM.mov",240,0,0.9362057482202848,-0.3309080898761749,0.4180196873213362
+1,val,152,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/After Exercise/310/Video 2025-02-19, 10 04 02 AM.mov",240,0,0.9345259490112464,-0.29333195090293884,0.427188346708545
+1,val,161,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/Before Exercise/417/Video 2025-02-27, 2 40 36 PM.mov",240,0,0.9373460392157237,-0.26557332277297974,0.43399415892150417
+1,val,162,427,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 5/427- lameness.mov,240,0,0.9439546080927054,-0.19970457255840302,0.4502391269513789
+1,val,163,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"21 Feb 2025/After Exercise/378/Video 2025-02-21, 10 06 18 AM.mov",240,0,0.941632175942262,-0.3269190788269043,0.4189904470221707
+1,val,177,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"March 19 2025/After exercise/310/Video 2025-03-19, 8 02 23 AM.mov",240,0,0.9346940619250138,-0.17348982393741608,0.4567360055192276
+1,val,186,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"6 March 2025/After Exercise/417/Video 2025-03-06, 7 46 03 AM.mov",240,0,0.9421360053122043,-0.27411314845085144,0.43189760309212516
+1,val,187,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/After Exercise/378/Video 2025-02-24, 10 28 03 AM.mov",240,0,0.9413431753714879,-0.252021461725235,0.43732601118405223
+1,val,196,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"6 March 2025/After Exercise/310/Video 2025-03-06, 7 50 46 AM.mov",240,0,0.9333293343583743,-0.3143210709095001,0.4220603664057109
+1,val,205,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/After Exercise/417/Video 2025-02-20, 9 53 18 AM.mov",240,0,0.8949444778263569,-0.20800209045410156,0.4481861527654378
+1,val,206,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"March 24 2025/After exercise/378/Video 2025-03-24, 7 55 45 AM.mov",240,0,0.9133493587374687,0.15673932433128357,0.5391048058267645
+1,val,214,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"17 March 2025/After exercise/310/Video 2025-03-17, 8 49 13 AM.mov",240,0,0.9345425792038441,-0.30724239349365234,0.4237879816494037
+1,val,222,417,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/Before Exercise/417/Video 2025-02-24, 8 52 11 AM.mov",240,0,0.9256576471030712,-0.2902851104736328,0.4279340687372195
+1,val,223,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/After Exercise/378/Video 2025-02-19, 9 46 39 AM.mov",240,0,0.9310373286406199,-0.2940952777862549,0.42700157218314794
+1,val,231,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"March 19 2025/During exercise/310/Video 2025-03-19, 7 28 29 AM.mov",240,0,0.9384731647868951,0.21986578404903412,0.5547460836262594
+1,val,238,417,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows after exercise/Sep 4/417- fresh cows .mov,240,0,0.932065366456906,-0.33024507761001587,0.41818099319552576
+1,val,239,378,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"March 19 2025/Before Exercise/378/Video 2025-03-19, 7 05 02 AM.mov",240,0,0.9228876727322738,-0.3029601573944092,0.42483400806376614
+1,val,247,310,1,Unhealthy,possible mastitis,Yashan Dhaliwal RAC Data 2025,"10 March 2025/After exercise/310/Video 2025-03-10, 7 35 13 AM.mov",240,0,0.9354673293729623,-0.2983589172363281,0.4259587084362629
+2,val,1,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 29/394-lameness.mov,240,0,0.9084200409551462,-0.17486292123794556,0.4563953216129327
+2,val,23,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/Before Exercise/436/Video 2025-02-27, 2 29 11 PM.mov",240,0,0.9348028359313806,-0.23141779005527496,0.4424023728829029
+2,val,25,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"10 March 2025/Before exercise/370/Video 2025-03-10, 6 25 31 AM.mov",240,0,0.9255412615835666,-0.23639827966690063,0.44117412806639494
+2,val,26,415,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 5/415 - lameness.mov,240,0,0.8978516126672427,-0.20161551237106323,0.44976616887881876
+2,val,33,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 26/394-lameness.mov,240,0,0.9465217828750611,-0.21657004952430725,0.44606811841632393
+2,val,55,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,20 Feb 2025/After Exercise/436 (1)/IMG_0548.MOV,240,0,0.9135668471455574,-0.18268606066703796,0.4544550831826652
+2,val,57,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/During Exercise/370/Video 2025-02-27, 3 22 44 PM.mov",199,41,0.8366024155712607,-0.08869285881519318,0.4778413091954175
+2,val,58,415,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 4/415 - lameness.mov,240,0,0.9029717360933621,0.06294716149568558,0.5157315962157779
+2,val,65,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 26/394-lameness.mov,217,23,0.9038919064855795,-0.14287611842155457,0.46434160939955726
+2,val,85,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/Before Exercise/436/Video 2025-02-19, 8 37 16 AM.mov",240,0,0.9138724977771441,-0.2793552577495575,0.4306118502956739
+2,val,87,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"7 March 2025/After Exercise/370/Video 2025-03-07, 7 32 51 AM.mov",240,0,0.9097090857724349,-0.08007803559303284,0.4799911821575249
+2,val,88,415,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 8/415 - lameness.mov,240,0,0.9057541300853094,0.34080857038497925,0.5843869209687705
+2,val,94,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 10/394-lameness.mov,240,0,0.9205281955500444,-0.23359912633895874,0.44186434317726153
+2,val,114,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"6 March 2025/During Exercise/436/Video 2025-03-06, 7 15 03 AM.mov",234,6,0.8841857708926893,-0.12272593379020691,0.46935696813181127
+2,val,116,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"March 19 2025/During exercise/370/Video 2025-03-19, 7 25 11 AM.mov",240,0,0.9330222343405088,0.52203369140625,0.6276231882836988
+2,val,117,415,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 5/415 - lameness.mov,240,0,0.9325070497890313,0.026766441762447357,0.506691210956443
+2,val,123,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 5/394-lameness.mov,240,0,0.9372839137911797,-0.2799508273601532,0.4304658314297677
+2,val,141,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/After Exercise/436/Video 2025-02-24, 10 44 42 AM.mov",240,0,0.9282110606630644,-0.12818768620491028,0.467996889598623
+2,val,143,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"10 March 2025/After exercise/370/Video 2025-03-10, 7 43 41 AM.mov",240,0,0.9178075117369493,0.08452345430850983,0.5211182922733986
+2,val,144,415,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 8/415 - lameness.mov,240,0,0.9235168501734734,0.5439251661300659,0.6327250380684462
+2,val,150,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 28/394-lameness.mov,240,0,0.9354369682570298,-0.285560667514801,0.4290910348516098
+2,val,167,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"17 March 2025/After exercise/436/Video 2025-03-17, 8 53 16 AM.mov",240,0,0.9435709595680237,-0.1558382362127304,0.46111909614613944
+2,val,169,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"7 March 2025/During Exercise/370/Video 2025-03-07, 7 05 16 AM.mov",240,0,0.9326459353168806,0.9261890649795532,0.7163014902035213
+2,val,170,415,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 4/415 - lameness.mov,240,0,0.9283979954818885,0.05724768340587616,0.514308013430465
+2,val,175,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Oct 1/394-lameness.mov,206,34,0.9018281926807848,-0.0012536970898509026,0.49968657576858944
+2,val,190,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"7 March 2025/During Exercise/436/Video 2025-03-07, 7 14 06 AM.mov",240,0,0.9037060412267844,-0.0536971390247345,0.4865789399265997
+2,val,191,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"28 Feb 2025/After Exercise/370/Video 2025-02-28, 9 45 01 AM.mov",240,0,0.9388760546843211,-0.22399385273456573,0.44423450340650233
+2,val,194,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Oct 6/394-lameness.mov,240,0,0.9326468085249265,-0.23486417531967163,0.44155237947199216
+2,val,209,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"17 March 2025/During Exercise/436/Video 2025-03-17, 8 24 39 AM.mov",240,0,0.9008327104151249,-0.23343420028686523,0.441905017670601
+2,val,210,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"10 March 2025/During exercise/370/Video 2025-03-10, 7 00 12 AM.mov",240,0,0.9229916309316953,-0.1294480711221695,0.4676830969531299
+2,val,213,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/oct 29/394-lameness.mov,235,5,0.9111202278035753,-0.24892178177833557,0.4380889031341121
+2,val,226,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/During Exercise/436/Video 2025-02-27, 3 11 14 PM.mov",238,2,0.852426141500473,-0.11999599635601044,0.47003694555189596
+2,val,227,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"12 March 2025/After exercise/370/Video 2025-03-12, 8 04 58 AM.mov",240,0,0.9282731565336386,-0.15897130966186523,0.46034065959169157
+2,val,230,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 29/394-lameness.mov,240,0,0.9172777165969213,-0.10154630243778229,0.4746352167128009
+2,val,242,436,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"10 March 2025/After exercise/436/Video 2025-03-10, 7 41 37 AM.mov",240,0,0.9042684098084768,-0.076689213514328,0.48083708750101434
+2,val,243,370,0,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"17 March 2025/Before exercise/370/Video 2025-03-17, 6 53 55 AM.mov",240,0,0.9229234715302785,-0.20862486958503723,0.44803213491703675
+2,val,246,394,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 10/394- lameness.mov,240,0,0.9050245667497318,-0.15708525478839874,0.46080924171449567
+3,val,2,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 7/323-lameness.mov,240,0,0.9290141927699248,-0.19517552852630615,0.4513604241811442
+3,val,21,349,1,Unhealthy,sudden fall,Cow 349 - Unhealthy (sudden fall),"Video 2025-03-28, 2 35 10 PM.mov",240,0,0.9362290667990844,-0.09768447279930115,0.4755982826681788
+3,val,24,439,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 8/439.mov,240,0,0.8954004652798175,-0.2134755253791809,0.4468328755943287
+3,val,31,352,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 28/352.mov,240,0,0.923103096584479,0.03321683406829834,0.5083034450583576
+3,val,34,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 7/323-lameness.mov,240,0,0.9206166617572308,-0.1857796311378479,0.4536882163405975
+3,val,53,349,1,Unhealthy,sudden fall,Cow 349 - Unhealthy (sudden fall),"Video 2025-03-28, 2 47 34 PM.mov",235,5,0.8500771225766933,0.966934084892273,0.7245079742826995
+3,val,56,439,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 5/439.mov,240,0,0.9179200741151968,0.2702336609363556,0.5671502674851434
+3,val,63,352,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 28/352.mov,240,0,0.9148002174993356,-0.18137769401073456,0.45477948013453384
+3,val,66,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 10/323- lameness.mov,240,0,0.9261671207845211,-0.17308330535888672,0.4568368760259546
+3,val,84,349,1,Unhealthy,sudden fall,Cow 349 - Unhealthy (sudden fall),"Video 2025-03-28, 2 31 06 PM.mov",240,0,0.9012683374186357,0.2533457577228546,0.5629998338500315
+3,val,86,439,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 4/439.mov,240,0,0.8978958723445734,-0.16611582040786743,0.45856627955594964
+3,val,95,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 28/323-lameness.mov,240,0,0.9107326470315457,-0.1752690076828003,0.4562945739068324
+3,val,113,349,1,Unhealthy,sudden fall,Cow 349 - Unhealthy (sudden fall),"Video 2025-03-28, 2 39 08 PM.mov",240,0,0.8926929208139579,0.5295342206954956,0.6293744697891583
+3,val,115,439,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 5/439.mov,240,0,0.9337034339706103,0.06890083849430084,0.5172183983839351
+3,val,124,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 5/323-lameness.mov,240,0,0.9248249081273874,-0.16694551706314087,0.4583602868698249
+3,val,142,439,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 8/439.mov,240,0,0.9272120421131452,-0.1978280395269394,0.45070365688284947
+3,val,151,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 5/323- lameness.mov,240,0,0.9309564903378487,0.0391419418156147,0.5097842362902737
+3,val,168,439,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 4/439.mov,239,1,0.9092682642417972,-0.08785371482372284,0.47805068704818104
+3,val,176,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 10/323-lameness.mov,240,0,0.895742766559124,-0.12900802493095398,0.4677926504806998
+3,val,195,323,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 28/323-lameness.mov,240,0,0.9364967639247577,-0.23693904280662537,0.44104081282735025
+4,val,10,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"7 March 2025/After Exercise/421/Video 2025-03-07, 7 25 57 AM.mov",240,0,0.9247473751505216,0.44189292192459106,0.6087099836025597
+4,val,13,428,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 5/428.mov,228,12,0.809245539600389,-0.23595179617404938,0.44128420678034236
+4,val,27,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/During Exercise/354/Video 2025-02-24, 9 41 39 AM.mov",240,0,0.9299345922966799,-0.033063217997550964,0.49173494841682835
+4,val,29,405,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 8/405.mov,240,0,0.9110889226198197,-0.137332946062088,0.46572062327602565
+4,val,42,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"March 24 2025/After exercise/421/Video 2025-03-24, 7 53 24 AM.mov",240,0,0.9310943168898423,-0.1888846457004547,0.4529187335460301
+4,val,45,428,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 5/428.mov,240,0,0.9216979759434859,-0.2330847978591919,0.4419911907832124
+4,val,59,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"March 19 2025/After exercise/354/Video 2025-03-19, 8 04 47 AM.mov",240,0,0.8884655413528283,0.6310311555862427,0.6527232368117349
+4,val,61,405,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 8/405.mov,240,0,0.9171775318682194,-0.18320469558238983,0.454326503318782
+4,val,74,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"March 24 2025/During exercise/421/Video 2025-03-24, 7 21 47 AM.mov",240,0,0.9105600071450074,0.9323033094406128,0.7175423433122576
+4,val,89,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"26 March 2025/After exercise/354/Video 2025-03-26, 8 32 59 AM.mov",240,0,0.9387057942648729,-0.09544583410024643,0.47615663962736343
+4,val,91,405,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 4/405.mov,240,0,0.9234221835931142,-0.2324637472629547,0.44214436909692595
+4,val,103,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"28 Feb 2025/After Exercise/421/Video 2025-02-28, 9 52 07 AM.mov",240,0,0.9399936330815156,-0.0880504697561264,0.4780015933183405
+4,val,118,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"21 Feb 2025/During Exercise/354/Video 2025-02-21, 9 23 37 AM.mov",240,0,0.9070203676819801,0.4556128978729248,0.6119729189807728
+4,val,120,405,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 5/405.mov,240,0,0.9110773128767808,-0.1283794641494751,0.4679491418244731
+4,val,132,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"7 March 2025/Before Exercise/421/Video 2025-03-07, 6 17 24 AM.mov",240,0,0.9428104480107625,-0.16991546750068665,0.45762304047127667
+4,val,145,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"6 March 2025/Before Exercise/354/Video 2025-03-06, 6 35 48 AM.mov",240,0,0.9263859363893668,-0.13144463300704956,0.4671860738900223
+4,val,147,405,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 5/405.mov,240,0,0.936050142844518,-0.16808147728443146,0.458078279786536
+4,val,158,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/During Exercise/421/Video 2025-02-19, 9 32 19 AM.mov",236,4,0.887193664150723,0.5347201228141785,0.630583331205286
+4,val,171,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/After Exercise/354/Video 2025-02-27, 3 46 49 PM.mov",240,0,0.9188152636090915,0.27848029136657715,0.5691736078109848
+4,val,183,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/Before Exercise/421/Video 2025-02-20, 8 37 01 AM.mov",240,0,0.9422114344934622,-0.15601372718811035,0.46107548899398815
+4,val,192,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"10 March 2025/Before exercise/354/Video 2025-03-10, 6 46 55 AM.mov",240,0,0.936105857292811,0.17813098430633545,0.5444153641171547
+4,val,202,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"10 March 2025/After exercise/421/Video 2025-03-10, 7 20 34 AM.mov",240,0,0.9284285046160221,-0.23869860172271729,0.44060708475975285
+4,val,211,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"10 March 2025/After exercise/354/Video 2025-03-10, 7 39 22 AM.mov",240,0,0.9356954174737135,-0.08490545302629471,0.47878637918199984
+4,val,219,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"26 March 2025/After exercise/421/Video 2025-03-26, 8 29 55 AM.mov",240,0,0.8558583483099937,0.4902871549129486,0.6201740763688612
+4,val,228,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/Before Exercise/354/Video 2025-02-27, 2 49 57 PM.mov",240,0,0.9311288975179195,0.0033320533111691475,0.5008330125570768
+4,val,235,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"6 March 2025/After Exercise/421/Video 2025-03-06, 7 41 38 AM.mov",240,0,0.9421610308190187,-0.23396259546279907,0.4417747062278044
+4,val,244,354,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"12 March 2025/After exercise/354/Video 2025-03-12, 8 17 08 AM.mov",240,0,0.9126965100566546,-0.09961310029029846,0.4751172969698818
+4,val,250,421,1,Unhealthy,lameness/stiffness,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/During Exercise/421/Video 2025-02-20, 9 26 43 AM.mov",240,0,0.9105410858988762,-0.18812277913093567,0.4531075181626972
+5,val,4,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 8/406.mov,240,0,0.911056953171889,-0.2774338722229004,0.4310830084235146
+5,val,12,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/Before Exercise/438/Video 2025-02-20, 8 57 35 AM.mov",240,0,0.933679478118817,-0.566928505897522,0.3619458577255342
+5,val,14,426,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 7/426.mov,240,0,0.9147064263621966,-0.39541688561439514,0.40241397870708273
+5,val,18,425,1,Unhealthy,unhealthy folder,Truro Cow Video Data,unhealthy cows after exercise/Sep 4/425.mov,240,0,0.9188506041963895,-0.2972225546836853,0.4262365927573228
+5,val,36,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 5/406.mov,109,131,0.9147433665914273,-0.477169394493103,0.38292075390790775
+5,val,44,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/During Exercise/438/Video 2025-02-20, 9 16 25 AM.mov",142,98,0.7666452296183143,-0.5252192616462708,0.3716326078865739
+5,val,46,426,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 7/426.mov,240,0,0.9348373867571353,-0.23708130419254303,0.4410057423020908
+5,val,50,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Oct 29/425-lameness.mov,240,0,0.9115876237551371,-0.6132487654685974,0.3513184672607952
+5,val,68,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 28/406.mov,240,0,0.907888301461935,-0.4537636935710907,0.3884662877094475
+5,val,76,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/During Exercise/438/Video 2025-02-19, 9 29 42 AM.mov",227,13,0.7865674976210237,-0.3403266370296478,0.41573013520745455
+5,val,77,426,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Nov 10/426.mov,240,0,0.8933867079516252,-0.4929642379283905,0.3791955179859439
+5,val,81,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/oct 29/425-lameness.mov,240,0,0.9149432549873988,-0.43065863847732544,0.39396906575372176
+5,val,97,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 4/406.mov,239,1,0.8010908008619333,-0.39548805356025696,0.40239686457407603
+5,val,105,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"6 March 2025/During Exercise/438/Video 2025-03-06, 7 01 07 AM.mov",240,0,0.9386081740260124,-0.5903602242469788,0.3565522064054573
+5,val,106,426,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 10/426.mov,226,14,0.9181157437573492,-0.494577020406723,0.3788159329042585
+5,val,110,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 10/425- lameness.mov,240,0,0.9359828511873881,-0.581499457359314,0.3585876415769633
+5,val,126,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 8/406.mov,240,0,0.9387013539671898,-0.5475541353225708,0.36643205423730796
+5,val,134,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"7 March 2025/After Exercise/438/Video 2025-03-07, 7 57 09 AM.mov",240,0,0.9332467970748742,-0.4687786102294922,0.3849053708974904
+5,val,138,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 26/425-lameness.mov,156,84,0.8682629133646305,-0.14212901890277863,0.4645274392685906
+5,val,153,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 28/406.mov,167,73,0.8631549852336952,-0.029600126668810844,0.4926005085910648
+5,val,160,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"March 24 2025/Before exercise/438/Video 2025-03-24, 7 04 54 AM.mov",240,0,0.9293987601995468,-0.5132136344909668,0.3744404772705129
+5,val,164,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 7/425-lameness.mov,240,0,0.9277856886386872,-0.5805758833885193,0.3588000936727921
+5,val,178,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 5/406.mov,240,0,0.9335280261933804,-0.6010860800743103,0.35409525509535994
+5,val,185,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"March 24 2025/During exercise/438/Video 2025-03-24, 7 29 33 AM.mov",240,0,0.9302744997044404,-0.09127046912908554,0.4771982093308032
+5,val,188,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 5/425-lameness.mov,240,0,0.8864598405857881,-0.25915178656578064,0.43557222926658756
+5,val,197,406,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 4/406.mov,240,0,0.8745156760017078,0.2827722728252411,0.5702257521076032
+5,val,204,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"7 March 2025/Before Exercise/438/Video 2025-03-07, 6 25 22 AM.mov",240,0,0.9214619271457195,-0.5569656491279602,0.36424984023829327
+5,val,207,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 29/425-lameness.mov,222,18,0.8695922099255227,0.7116371989250183,0.6707628199461144
+5,val,221,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/After Exercise/438/Video 2025-02-19, 10 00 34 AM.mov",240,0,0.8976600249608357,-0.4364956319332123,0.3925763060690647
+5,val,224,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 5/425- lameness.mov,228,12,0.9097434060092557,-0.43866392970085144,0.3920593740679082
+5,val,237,438,1,Unhealthy,possible metritis,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/Before Exercise/438/Video 2025-02-27, 2 42 51 PM.mov",240,0,0.9318277048567931,-0.3726867735385895,0.40789196224090074
+5,val,240,425,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 29/425-lameness.mov,240,0,0.9116174807151158,1.0714575052261353,0.7448739941918286
+6,val,5,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 29/387.mov,240,0,0.873274622609218,-0.3274631202220917,0.41885801281094603
+6,val,7,446,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows after exercise/Sep 5/446- fresh cows.mov,240,0,0.9178997702896595,-0.2402387410402298,0.44022751759544027
+6,val,28,255,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/oct 29/255-lameness.mov,228,12,0.9114086829256594,-0.3578067719936371,0.41149058808337763
+6,val,30,355,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 8/355.mov,240,0,0.9403041946391265,-0.35219982266426086,0.4128490716583246
+6,val,37,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 26/387.mov,240,0,0.9284285965065161,-0.3543648421764374,0.4123243599283959
+6,val,39,446,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows before going out/Sep 4/446- fresh cows.mov,223,17,0.8755478757379301,0.4023682773113251,0.5992565309631556
+6,val,60,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"10 March 2025/During exercise/255/Video 2025-03-10, 6 58 02 AM.mov",240,0,0.9107565005620321,0.5228711366653442,0.627818888632204
+6,val,62,355,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 4/355.mov,240,0,0.9181237099071343,-0.2260042279958725,0.44373821724286683
+6,val,69,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 1/387.mov,240,0,0.911483658105135,-0.27414706349372864,0.43188928164644075
+6,val,71,446,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows after exercise/Sep 4/446- fresh cows.mov,221,19,0.8468000608332017,0.42282575368881226,0.6041592297852408
+6,val,90,255,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 10/255- lameness.mov,240,0,0.922835485637188,-0.37876829504966736,0.4064240036380957
+6,val,92,355,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 5/355.mov,240,0,0.9087575907508533,-0.3035081923007965,0.42470010121347923
+6,val,98,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 29/387.mov,240,0,0.9007205563286941,-0.43381136655807495,0.3932165806341068
+6,val,100,446,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows before going out/Sep 8/446- fresh cows.mov,240,0,0.9309417222936948,-0.15924091637134552,0.4602736826853665
+6,val,119,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"6 March 2025/After Exercise/255/Video 2025-03-06, 7 36 58 AM.mov",240,0,0.9342030165096123,-0.3181993067264557,0.4211146531748107
+6,val,121,355,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 4/355.mov,240,0,0.9202614963054657,-0.08757536113262177,0.47812014179174483
+6,val,127,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 26/387.mov,240,0,0.8927430885533492,0.042036183178424835,0.5105074985753725
+6,val,129,446,1,Unhealthy,fresh cows,Truro Cow Video Data,unhealthy cows after exercise/Sep 8/446- fresh cows.mov,240,0,0.9242884775002798,-0.26034900546073914,0.435277916860514
+6,val,146,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"7 March 2025/Before Exercise/255/Video 2025-03-07, 6 15 14 AM.mov",240,0,0.9405695259571075,-0.388902872800827,0.4039814396165479
+6,val,148,355,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 5/355.mov,240,0,0.9303450296322505,-0.3798041045665741,0.4061741455311336
+6,val,154,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 6/387.mov,240,0,0.9176990941166878,-0.27980780601501465,0.4305008956064119
+6,val,172,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/After Exercise/255/Video 2025-02-24, 10 23 45 AM.mov",240,0,0.9304577060043812,-0.2713884115219116,0.4325662738331948
+6,val,173,355,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 8/355.mov,224,16,0.871411166020802,-0.2627783417701721,0.43468085331770134
+6,val,179,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 6/387.mov,240,0,0.9339507547517617,-0.38368669152259827,0.4052380205289767
+6,val,193,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"6 March 2025/During Exercise/255/Video 2025-03-06, 6 50 27 AM.mov",240,0,0.9254020775357882,1.0100538730621338,0.7330306921515023
+6,val,198,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 1/387.mov,240,0,0.9315506761272748,-0.2793552875518799,0.43061184298858296
+6,val,212,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"27 Feb 2025/During Exercise/255/Video 2025-02-27, 3 06 39 PM.mov",240,0,0.9000558401147525,-0.15060652792453766,0.46241937584432824
+6,val,215,387,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 25/387.mov,240,0,0.9328289069235325,-0.45360371470451355,0.38850429300399913
+6,val,229,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"26 March 2025/255/Video 2025-03-26, 8 36 20 AM.mov",240,0,0.9301489410301049,-0.15066936612129211,0.4624037550786266
+6,val,245,255,1,Unhealthy,lame,Yashan Dhaliwal RAC Data 2025,"28 Feb 2025/After Exercise/255/Video 2025-02-28, 9 47 37 AM.mov",240,0,0.9172798715531826,-0.05809611454606056,0.4854800550601009

@@ -1,0 +1,8 @@
+video_key,n_sequences,cow_id,dataset_root,relative_path,target_mean,pain_prob,positives,target
+Truro Cow Video Data::healthy cows after exercise/Sep 29/404.mov,1,404,Truro Cow Video Data,healthy cows after exercise/Sep 29/404.mov,0.0,0.5105095525055428,0,0
+Truro Cow Video Data::healthy cows before going out/Oct 6/404.mov,4,404,Truro Cow Video Data,healthy cows before going out/Oct 6/404.mov,0.0,0.48309714882063604,0,0
+Truro Cow Video Data::healthy cows before going out/Sep 4/408.mov,1,408,Truro Cow Video Data,healthy cows before going out/Sep 4/408.mov,0.0,0.49097530644121484,0,0
+Truro Cow Video Data::healthy cows before going out/Sep 8/408.mov,5,408,Truro Cow Video Data,healthy cows before going out/Sep 8/408.mov,0.0,0.46814726675796,0,0
+Truro Cow Video Data::unhealthy cows after exercise/Nov 28/363-lameness.mov,6,363,Truro Cow Video Data,unhealthy cows after exercise/Nov 28/363-lameness.mov,1.0,0.4668224374901471,6,1
+Truro Cow Video Data::unhealthy cows after exercise/Oct 6/403-lameness.mov,7,403,Truro Cow Video Data,unhealthy cows after exercise/Oct 6/403-lameness.mov,1.0,0.4616899926531505,7,1
+Truro Cow Video Data::unhealthy cows after exercise/Sep 5/403- lameness.mov,3,403,Truro Cow Video Data,unhealthy cows after exercise/Sep 5/403- lameness.mov,1.0,0.4852979668512167,3,1

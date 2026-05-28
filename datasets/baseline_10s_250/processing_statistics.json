@@ -1,0 +1,70 @@
+{
+  "dry_run": false,
+  "target_videos": 250,
+  "sequence_seconds": 10.0,
+  "target_fps": 24.0,
+  "frames_per_sequence": 240,
+  "ignored_cow_ids": [
+    "409"
+  ],
+  "eligible_inventory": {
+    "videos": 563,
+    "unique_cows": 32,
+    "cow_health_counts": {
+      "Unhealthy": 393,
+      "Healthy": 170
+    },
+    "video_health_counts": {
+      "Unhealthy": 315,
+      "Healthy": 248
+    },
+    "dataset_counts": {
+      "Yashan Dhaliwal RAC Data 2025": 351,
+      "Truro Cow Video Data": 208,
+      "Cow 349 - Unhealthy (sudden fall)": 4
+    },
+    "min_videos_per_cow": 2,
+    "max_videos_per_cow": 46,
+    "mean_video_duration_sec": 99.72623741859088
+  },
+  "selected_plan": {
+    "videos": 250,
+    "unique_cows": 32,
+    "cow_health_counts": {
+      "Unhealthy": 145,
+      "Healthy": 105
+    },
+    "video_health_counts": {
+      "Unhealthy": 127,
+      "Healthy": 123
+    },
+    "dataset_counts": {
+      "Truro Cow Video Data": 148,
+      "Yashan Dhaliwal RAC Data 2025": 98,
+      "Cow 349 - Unhealthy (sudden fall)": 4
+    },
+    "min_videos_per_cow": 2,
+    "max_videos_per_cow": 11,
+    "mean_video_duration_sec": 87.45074
+  },
+  "completed_sequences": 250,
+  "skipped_candidates": 0,
+  "errors": [],
+  "processing_time_sec": 14912.612748622894,
+  "completed_summary": {
+    "cow_health_counts": {
+      "Unhealthy": 145,
+      "Healthy": 105
+    },
+    "video_health_counts": {
+      "Unhealthy": 127,
+      "Healthy": 123
+    },
+    "unique_cows": 32,
+    "dataset_counts": {
+      "Truro Cow Video Data": 148,
+      "Yashan Dhaliwal RAC Data 2025": 98,
+      "Cow 349 - Unhealthy (sudden fall)": 4
+    }
+  }
+}

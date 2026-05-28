@@ -1,0 +1,4 @@
+dataset_root,n,pain_prob_mean,pain_prob_std
+Cow 349 - Unhealthy (sudden fall),4,0.44517144560813904,0.05457011746438251
+Truro Cow Video Data,148,0.4302456695083025,0.05251655716284714
+Yashan Dhaliwal RAC Data 2025,98,0.4384888878890446,0.05257807017175168

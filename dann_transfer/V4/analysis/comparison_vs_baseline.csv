@@ -1,0 +1,11 @@
+condition,dataset,n_sequences_train_pool,test_sequences,test_videos,test_cows,eval_level,auc,balanced_accuracy,f1,threshold,spec_constrained_bacc,notes
+weak_focal,thesis_stride8_qa,522,27,7,4,sequence,0.4205,0.5511,0.4800,0.4653,0.6136,9-fold x 3 val cows; pooled val threshold
+weak_focal,thesis_stride8_qa,522,27,7,4,video,0.4167,0.5417,0.4000,0.4653,0.6667,mean prob per source clip
+weak_focal,thesis_stride8_qa,522,27,7,4,cow,0.5000,0.7500,0.6667,0.4653,0.7500,mean prob per animal; bootstrap AUC CI [0.0 1.0]
+coral_w_0.10,thesis_stride8_qa,522,27,7,4,sequence,0.1989,0.4858,0.1111,0.5000,0.5312,CORAL domain alignment; source retention gate passed all folds
+coral_w_0.10,thesis_stride8_qa,522,27,7,4,video,0.1667,0.3750,0.0000,0.5000,0.5000,probabilities collapsed near 0.4-0.5 for all cows
+coral_w_0.10,thesis_stride8_qa,522,27,7,4,cow,0.0000,0.5000,0.0000,0.5000,0.5000,no separation at cow level
+weak_focal,baseline_10s_250,218,29,NA,4,sequence,0.4760,0.4255,0.4516,0.4507,0.6370,V3 frozen baseline matrix job 12326664
+weak_focal,baseline_10s_250,218,29,NA,4,cow,0.5000,0.5000,0.6667,0.4507,0.7500,same 4 test cows
+coral_w_0.10,baseline_10s_250,218,29,NA,4,sequence,0.5769,0.5120,0.4615,0.5160,0.5745,best sequence AUC in V3 baseline matrix
+coral_w_0.10,baseline_10s_250,218,29,NA,4,cow,0.5000,0.5000,0.5000,0.5160,0.7500,same 4 test cows

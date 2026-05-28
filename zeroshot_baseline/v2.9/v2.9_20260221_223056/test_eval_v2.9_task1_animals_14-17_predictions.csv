@@ -1,0 +1,36 @@
+clip_id,sequence_id,sequence_path,animal,moment,task1_true,task1_pred,task2_true,task2_pred
+Animal_17_M3_Facial_very_low_re_olution__equence_002,Animal17_M3_1,Animal 17 M3 Facial (very low resolution)/sequence_002,17,M3,1,1,2,1
+Animal_17_M3_Facial_very_low_re_olution__equence_001,Animal17_M3_2,Animal 17 M3 Facial (very low resolution)/sequence_001,17,M3,1,1,2,1
+Animal_17_M1_Facial_equence_004,Animal17_M1_1,Animal 17 M1 Facial/sequence_004,17,M1,0,0,0,0
+Animal_17_M1_Facial_equence_003,Animal17_M1_2,Animal 17 M1 Facial/sequence_003,17,M1,0,0,0,0
+Animal_17_M1_Facial_equence_002,Animal17_M1_3,Animal 17 M1 Facial/sequence_002,17,M1,0,0,0,0
+Animal_17_M1_Facial_equence_001,Animal17_M1_4,Animal 17 M1 Facial/sequence_001,17,M1,0,0,0,0
+Animal_17_M4_Facial_equence_002,Animal17_M4_1,Animal 17 M4 Facial/sequence_002,17,M4,1,1,2,1
+Animal_17_M4_Facial_equence_001,Animal17_M4_2,Animal 17 M4 Facial/sequence_001,17,M4,1,1,2,1
+Animal_17_M4_Facial_equence_003,Animal17_M4_3,Animal 17 M4 Facial/sequence_003,17,M4,1,1,2,1
+Animal_17_M0_Facial_equence_004,Animal17_M0_1,Animal 17 M0 Facial/sequence_004,17,M0,0,0,0,0
+Animal_17_M0_Facial_equence_001,Animal17_M0_2,Animal 17 M0 Facial/sequence_001,17,M0,0,1,0,1
+Animal_17_M0_Facial_equence_003,Animal17_M0_3,Animal 17 M0 Facial/sequence_003,17,M0,0,0,0,0
+Animal_17_M0_Facial_equence_002,Animal17_M0_4,Animal 17 M0 Facial/sequence_002,17,M0,0,0,0,0
+Animal_17_M2_Facial_equence_002,Animal17_M2_1,Animal 17 M2 Facial/sequence_002,17,M2,1,1,1,1
+Animal_17_M2_Facial_equence_003,Animal17_M2_2,Animal 17 M2 Facial/sequence_003,17,M2,1,1,1,1
+Animal_17_M2_Facial_equence_001,Animal17_M2_3,Animal 17 M2 Facial/sequence_001,17,M2,1,1,1,1
+Animal_14_M2_Facial_1_equence_001,Animal14_M2_1,Animal 14 M2 Facial 1/sequence_001,14,M2,1,1,1,1
+Animal_14_M2_Facial_1_equence_003,Animal14_M2_2,Animal 14 M2 Facial 1/sequence_003,14,M2,1,1,1,1
+Animal_14_M2_Facial_1_equence_002,Animal14_M2_3,Animal 14 M2 Facial 1/sequence_002,14,M2,1,1,1,1
+Animal_14_M3_Facial_equence_001,Animal14_M3_1,Animal 14 M3 Facial/sequence_001,14,M3,1,1,2,1
+Animal_14_M3_Facial_equence_002,Animal14_M3_2,Animal 14 M3 Facial/sequence_002,14,M3,1,1,2,1
+Animal_14_M3_Facial_equence_003,Animal14_M3_3,Animal 14 M3 Facial/sequence_003,14,M3,1,1,2,1
+Animal_14_M1_Facial_equence_002,Animal14_M1_1,Animal 14 M1 Facial/sequence_002,14,M1,0,1,0,1
+Animal_14_M1_Facial_equence_003,Animal14_M1_2,Animal 14 M1 Facial/sequence_003,14,M1,0,1,0,1
+Animal_14_M1_Facial_equence_001,Animal14_M1_3,Animal 14 M1 Facial/sequence_001,14,M1,0,0,0,0
+Animal_14_M4_Facial_equence_004,Animal14_M4_1,Animal 14 M4 Facial/sequence_004,14,M4,1,1,2,1
+Animal_14_M4_Facial_equence_001,Animal14_M4_2,Animal 14 M4 Facial/sequence_001,14,M4,1,1,2,1
+Animal_14_M4_Facial_equence_003,Animal14_M4_3,Animal 14 M4 Facial/sequence_003,14,M4,1,1,2,1
+Animal_14_M4_Facial_equence_002,Animal14_M4_4,Animal 14 M4 Facial/sequence_002,14,M4,1,1,2,1
+Animal_14_M0_Facial_2_equence_003,Animal14_M0_1,Animal 14 M0 Facial 2/sequence_003,14,M0,0,1,0,1
+Animal_14_M0_Facial_2_equence_001,Animal14_M0_2,Animal 14 M0 Facial 2/sequence_001,14,M0,0,1,0,1
+Animal_14_M0_Facial_2_equence_002,Animal14_M0_3,Animal 14 M0 Facial 2/sequence_002,14,M0,0,1,0,1
+Animal_14_M2_Facial_2_equence_001,Animal14_M2_1,Animal 14 M2 Facial 2/sequence_001,14,M2,1,1,1,1
+Animal_14_M2_Facial_2_equence_002,Animal14_M2_2,Animal 14 M2 Facial 2/sequence_002,14,M2,1,1,1,1
+Animal_14_M2_Facial_2_equence_003,Animal14_M2_3,Animal 14 M2 Facial 2/sequence_003,14,M2,1,1,1,1

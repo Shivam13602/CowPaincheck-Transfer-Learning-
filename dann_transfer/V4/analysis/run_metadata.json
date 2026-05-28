@@ -1,0 +1,48 @@
+{
+  "version": "V4",
+  "dataset_version": "thesis_stride8_qa",
+  "dataset_path_local": "Transferlearning/cow_face_sequences_thesis_stride8/output",
+  "dataset_path_rorqual": "/scratch/shiv136/project_data/cow_face_sequences_thesis_stride8/output",
+  "training_code": "V3/training_code (weak_label_adapt_v3.py, dann_adapt_v3.py)",
+  "slurm_job_id": 13253646,
+  "slurm_account": "def-sureshra_gpu",
+  "gpu": "H100 x1",
+  "completed_utc": "20260526",
+  "output_root_rorqual": "/scratch/shiv136/project_data/runs/v3_thesis_stride8_qa",
+  "output_root_local": "V4/results",
+  "conditions_run": ["weak_focal", "coral_w_0.10"],
+  "cv_protocol": {
+    "inner_folds": 9,
+    "val_cows_per_fold": 3,
+    "test_cow_ids": ["363", "403", "404", "408"],
+    "require_val_both_classes": true,
+    "threshold_policy": "pooled validation Youden with specificity >= 0.5"
+  },
+  "training_settings": {
+    "batch_size": 32,
+    "num_workers": 20,
+    "weak_epochs": 80,
+    "dann_epochs": 80,
+    "init_checkpoint": "/scratch/shiv136/project_data/v2.9_20260222_144752",
+    "label_column": "video_health_status",
+    "weak_loss": "focal",
+    "dann_alignment": "coral",
+    "coral_weight": 0.1
+  },
+  "dataset_summary": {
+    "completed_sequences": 549,
+    "unique_cows": 31,
+    "sequence_seconds": 10.0,
+    "stride_seconds": 8.0,
+    "overlap_seconds": 2.0,
+    "frames_per_sequence": 240,
+    "target_fps": 24.0,
+    "healthy_sequences": 174,
+    "unhealthy_sequences": 375
+  },
+  "prior_runs": {
+    "V3_baseline_matrix": "V3/rorqual_run_20260515_12326664/v3_baseline_10s_250",
+    "failed_job_13253091": "val_cows_per_fold=4 incompatible with 31 cows (27 train pool)",
+    "fixed_in_job_13253646": "val_cows_per_fold=3 -> 9 folds x 3 val cows"
+  }
+}

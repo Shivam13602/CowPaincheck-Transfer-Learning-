@@ -1,0 +1,977 @@
+{
+  "created_utc": "20260508T064141Z",
+  "seed": 42,
+  "label_column": "video_health_status",
+  "label_mapping": {
+    "Healthy": 0,
+    "Unhealthy": 1
+  },
+  "n_sequences": 250,
+  "n_cows": 32,
+  "test": {
+    "cows": [
+      "363",
+      "403",
+      "404",
+      "408"
+    ],
+    "n_cows": 4,
+    "n_sequences": 29,
+    "healthy_sequences": 16,
+    "unhealthy_sequences": 13
+  },
+  "train_pool": {
+    "cows": [
+      "255",
+      "310",
+      "323",
+      "349",
+      "352",
+      "354",
+      "355",
+      "370",
+      "374",
+      "378",
+      "387",
+      "394",
+      "402",
+      "405",
+      "406",
+      "415",
+      "417",
+      "421",
+      "425",
+      "426",
+      "427",
+      "428",
+      "432",
+      "433",
+      "436",
+      "438",
+      "439",
+      "446"
+    ],
+    "n_cows": 28,
+    "n_sequences": 221,
+    "healthy_sequences": 107,
+    "unhealthy_sequences": 114
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "378",
+          "387",
+          "394",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 200,
+        "healthy_sequences": 86,
+        "unhealthy_sequences": 114
+      },
+      "val": {
+        "cows": [
+          "374",
+          "402"
+        ],
+        "n_cows": 2,
+        "n_sequences": 21,
+        "healthy_sequences": 21,
+        "unhealthy_sequences": 0
+      }
+    },
+    {
+      "fold": 1,
+      "train": {
+        "cows": [
+          "255",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 200,
+        "healthy_sequences": 99,
+        "unhealthy_sequences": 101
+      },
+      "val": {
+        "cows": [
+          "310",
+          "417"
+        ],
+        "n_cows": 2,
+        "n_sequences": 21,
+        "healthy_sequences": 8,
+        "unhealthy_sequences": 13
+      }
+    },
+    {
+      "fold": 2,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 205,
+        "healthy_sequences": 97,
+        "unhealthy_sequences": 108
+      },
+      "val": {
+        "cows": [
+          "415",
+          "436"
+        ],
+        "n_cows": 2,
+        "n_sequences": 16,
+        "healthy_sequences": 10,
+        "unhealthy_sequences": 6
+      }
+    },
+    {
+      "fold": 3,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 211,
+        "healthy_sequences": 101,
+        "unhealthy_sequences": 110
+      },
+      "val": {
+        "cows": [
+          "349",
+          "439"
+        ],
+        "n_cows": 2,
+        "n_sequences": 10,
+        "healthy_sequences": 6,
+        "unhealthy_sequences": 4
+      }
+    },
+    {
+      "fold": 4,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "425",
+          "426",
+          "427",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 208,
+        "healthy_sequences": 105,
+        "unhealthy_sequences": 103
+      },
+      "val": {
+        "cows": [
+          "421",
+          "428"
+        ],
+        "n_cows": 2,
+        "n_sequences": 13,
+        "healthy_sequences": 2,
+        "unhealthy_sequences": 11
+      }
+    },
+    {
+      "fold": 5,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 203,
+        "healthy_sequences": 99,
+        "unhealthy_sequences": 104
+      },
+      "val": {
+        "cows": [
+          "406",
+          "438"
+        ],
+        "n_cows": 2,
+        "n_sequences": 18,
+        "healthy_sequences": 8,
+        "unhealthy_sequences": 10
+      }
+    },
+    {
+      "fold": 6,
+      "train": {
+        "cows": [
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 202,
+        "healthy_sequences": 98,
+        "unhealthy_sequences": 104
+      },
+      "val": {
+        "cows": [
+          "255",
+          "387"
+        ],
+        "n_cows": 2,
+        "n_sequences": 19,
+        "healthy_sequences": 9,
+        "unhealthy_sequences": 10
+      }
+    },
+    {
+      "fold": 7,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 205,
+        "healthy_sequences": 101,
+        "unhealthy_sequences": 104
+      },
+      "val": {
+        "cows": [
+          "432",
+          "433"
+        ],
+        "n_cows": 2,
+        "n_sequences": 16,
+        "healthy_sequences": 6,
+        "unhealthy_sequences": 10
+      }
+    },
+    {
+      "fold": 8,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 205,
+        "healthy_sequences": 97,
+        "unhealthy_sequences": 108
+      },
+      "val": {
+        "cows": [
+          "378",
+          "427"
+        ],
+        "n_cows": 2,
+        "n_sequences": 16,
+        "healthy_sequences": 10,
+        "unhealthy_sequences": 6
+      }
+    },
+    {
+      "fold": 9,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "374",
+          "378",
+          "387",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 200,
+        "healthy_sequences": 97,
+        "unhealthy_sequences": 103
+      },
+      "val": {
+        "cows": [
+          "370",
+          "394"
+        ],
+        "n_cows": 2,
+        "n_sequences": 21,
+        "healthy_sequences": 10,
+        "unhealthy_sequences": 11
+      }
+    },
+    {
+      "fold": 10,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "349",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 211,
+        "healthy_sequences": 105,
+        "unhealthy_sequences": 106
+      },
+      "val": {
+        "cows": [
+          "323",
+          "352"
+        ],
+        "n_cows": 2,
+        "n_sequences": 10,
+        "healthy_sequences": 2,
+        "unhealthy_sequences": 8
+      }
+    },
+    {
+      "fold": 11,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 206,
+        "healthy_sequences": 102,
+        "unhealthy_sequences": 104
+      },
+      "val": {
+        "cows": [
+          "354",
+          "405"
+        ],
+        "n_cows": 2,
+        "n_sequences": 15,
+        "healthy_sequences": 5,
+        "unhealthy_sequences": 10
+      }
+    },
+    {
+      "fold": 12,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "355",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439",
+          "446"
+        ],
+        "n_cows": 26,
+        "n_sequences": 207,
+        "healthy_sequences": 103,
+        "unhealthy_sequences": 104
+      },
+      "val": {
+        "cows": [
+          "425",
+          "426"
+        ],
+        "n_cows": 2,
+        "n_sequences": 14,
+        "healthy_sequences": 4,
+        "unhealthy_sequences": 10
+      }
+    },
+    {
+      "fold": 13,
+      "train": {
+        "cows": [
+          "255",
+          "310",
+          "323",
+          "349",
+          "352",
+          "354",
+          "370",
+          "374",
+          "378",
+          "387",
+          "394",
+          "402",
+          "405",
+          "406",
+          "415",
+          "417",
+          "421",
+          "425",
+          "426",
+          "427",
+          "428",
+          "432",
+          "433",
+          "436",
+          "438",
+          "439"
+        ],
+        "n_cows": 26,
+        "n_sequences": 210,
+        "healthy_sequences": 101,
+        "unhealthy_sequences": 109
+      },
+      "val": {
+        "cows": [
+          "355",
+          "446"
+        ],
+        "n_cows": 2,
+        "n_sequences": 11,
+        "healthy_sequences": 6,
+        "unhealthy_sequences": 5
+      }
+    }
+  ],
+  "cow_table": [
+    {
+      "cow_id": "352",
+      "n_sequences": 2,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 2,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "355",
+      "n_sequences": 6,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 6,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "370",
+      "n_sequences": 10,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 10,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "374",
+      "n_sequences": 10,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 10,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "378",
+      "n_sequences": 10,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 10,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "387",
+      "n_sequences": 9,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 9,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "402",
+      "n_sequences": 11,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 11,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "404",
+      "n_sequences": 10,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 10,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "405",
+      "n_sequences": 5,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 5,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "406",
+      "n_sequences": 8,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 8,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "408",
+      "n_sequences": 6,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 6,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "417",
+      "n_sequences": 10,
+      "positives": 2,
+      "target_mean": 0.2,
+      "negatives": 8,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "426",
+      "n_sequences": 4,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 4,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "428",
+      "n_sequences": 2,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 2,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "432",
+      "n_sequences": 6,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 6,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "436",
+      "n_sequences": 10,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 10,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "439",
+      "n_sequences": 6,
+      "positives": 0,
+      "target_mean": 0.0,
+      "negatives": 6,
+      "majority_target": 0
+    },
+    {
+      "cow_id": "255",
+      "n_sequences": 10,
+      "positives": 10,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "310",
+      "n_sequences": 11,
+      "positives": 11,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "323",
+      "n_sequences": 8,
+      "positives": 8,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "349",
+      "n_sequences": 4,
+      "positives": 4,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "354",
+      "n_sequences": 10,
+      "positives": 10,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "363",
+      "n_sequences": 2,
+      "positives": 2,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "394",
+      "n_sequences": 11,
+      "positives": 11,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "403",
+      "n_sequences": 11,
+      "positives": 11,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "415",
+      "n_sequences": 6,
+      "positives": 6,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "421",
+      "n_sequences": 11,
+      "positives": 11,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "425",
+      "n_sequences": 10,
+      "positives": 10,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "427",
+      "n_sequences": 6,
+      "positives": 6,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "433",
+      "n_sequences": 10,
+      "positives": 10,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "438",
+      "n_sequences": 10,
+      "positives": 10,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    },
+    {
+      "cow_id": "446",
+      "n_sequences": 5,
+      "positives": 5,
+      "target_mean": 1.0,
+      "negatives": 0,
+      "majority_target": 1
+    }
+  ]
+}

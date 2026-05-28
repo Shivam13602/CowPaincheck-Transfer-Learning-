@@ -1,0 +1,51 @@
+{
+  "dataset_version": "thesis_stride8_qa",
+  "dry_run": false,
+  "videos_per_cow_target": 3,
+  "selection_seed": 42,
+  "strict_videos_per_cow": false,
+  "sequence_seconds": 10.0,
+  "stride_seconds": 8.0,
+  "window_overlap_seconds": 2.0,
+  "target_fps": 24.0,
+  "frames_per_sequence": 240,
+  "selected_source_videos": 92,
+  "selected_unique_cows": 32,
+  "candidate_windows": 900,
+  "completed_sequences": 549,
+  "rejected_windows": 332,
+  "selection_summary": {
+    "healthy_cows": 15,
+    "unhealthy_cows": 17,
+    "partial_cows": [
+      "352",
+      "363",
+      "428"
+    ],
+    "skipped_cows": []
+  },
+  "errors": [],
+  "processing_time_sec": 47514.505746126175,
+  "completed_summary": {
+    "cow_health_counts": {
+      "Healthy": 174,
+      "Unhealthy": 375
+    },
+    "video_health_counts": {
+      "Healthy": 234,
+      "Unhealthy": 315
+    },
+    "session_counts": {
+      "after_exercise": 281,
+      "before_exercise": 62,
+      "during_exercise": 119,
+      "sudden_fall": 87
+    },
+    "unique_cows": 31,
+    "dataset_counts": {
+      "Truro Cow Video Data": 196,
+      "Yashan Dhaliwal RAC Data 2025": 266,
+      "Cow 349 - Unhealthy (sudden fall)": 87
+    }
+  }
+}

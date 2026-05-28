@@ -1,0 +1,42 @@
+{
+  "task1": {
+    "Accuracy": 0.8571428571428571,
+    "F1": 0.8936170212765957,
+    "Precision": 0.8076923076923077,
+    "Recall": 1.0,
+    "N": 35
+  },
+  "task2": {
+    "Accuracy": 0.3142857142857143,
+    "F1_weighted": 0.29580220142833574,
+    "F1_macro": 0.30380025298355606,
+    "Precision_weighted": 0.29815126050420165,
+    "Recall_weighted": 0.3142857142857143,
+    "N": 35
+  },
+  "task2_mode": "3class",
+  "ckpt_kind": "task1",
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "ensemble": "mean_logits",
+  "task1_threshold_logit": 0.0,
+  "optimize_task1_threshold": true,
+  "task1_opt": {
+    "best_thr_prob": 0.6,
+    "best_f1": 0.9767441860465116
+  },
+  "test_animals": [
+    14,
+    17
+  ],
+  "N": 35
+}

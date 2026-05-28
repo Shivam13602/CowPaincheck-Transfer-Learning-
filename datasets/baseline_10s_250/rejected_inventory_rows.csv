@@ -1,0 +1,3 @@
+selection_rank,cow_id,cow_health_status,video_health_status,health_condition,dataset_root,relative_path,video_path,duration_sec,fps,frame_count
+1,436,Healthy,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"17 March 2025/After exercise/436/Video 2025-03-17, 8 55 15 AM.mov","C:\Users\shivp\Downloads\Research\DATASET\Yashan Dhaliwal RAC Data 2025\17 March 2025\After exercise\436\Video 2025-03-17, 8 55 15 AM.mov",3.766667,30.000000,113
+2,417,Unhealthy,Healthy,healthy,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/During Exercise/417/Video 2025-02-19, 9 37 02 AM.mov","C:\Users\shivp\Downloads\Research\DATASET\Yashan Dhaliwal RAC Data 2025\19 Feb 2025\During Exercise\417\Video 2025-02-19, 9 37 02 AM.mov",9.033333,30.000000,271

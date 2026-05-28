@@ -1,0 +1,27 @@
+# Bulk data (not versioned — see docs/DATA_ACCESS.md)
+**/sequences/
+**/output/sequences/
+*.tar
+*.pt
+best.pt
+
+# Generated / local ops
+__pycache__/
+*.pyc
+*.log
+*.remote.log
+node_modules/
+presentation/
+
+# IDE / OS
+.cursor/
+.DS_Store
+Thumbs.db
+
+# Slurm / cluster logs
+**/slurm_logs/
+
+# Keep manifests and statistics
+!**/completed_manifest.csv
+!**/processing_statistics.json
+!**/*_manifest.csv

@@ -1,0 +1,30 @@
+fold,split,sequence_index,cow_id,target,target_label,health_condition,dataset_root,relative_path,detected_frames,filled_frames,mean_detection_confidence,pain_logit,pain_prob
+ensemble,test,8,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Oct 1/403-lameness.mov,240,0,0.9344641707837582,-0.296317030276571,0.4264580616421414
+ensemble,test,20,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 6/404.mov,228,12,0.8915525588550066,-0.19901241894279206,0.45041045737707386
+ensemble,test,22,363,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Nov 28/363-lameness.mov,240,0,0.9201346014936765,-0.03358483261295727,0.4916045809600257
+ensemble,test,32,408,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 4/408.mov,240,0,0.9120800830423832,-0.19462540745735168,0.4514966566091968
+ensemble,test,40,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 8/403- lameness.mov,240,0,0.9137769490480423,0.715887154851641,0.6717006984026876
+ensemble,test,52,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 1/404.mov,240,0,0.8944588594138623,0.7918678351811,0.6882322502414852
+ensemble,test,54,363,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Nov 28/363-lameness.mov,240,0,0.9282889425754547,-0.03462707517402513,0.4913440960830433
+ensemble,test,64,408,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 5/408.mov,240,0,0.9413356443246206,-0.3089113916669573,0.4233804780291282
+ensemble,test,72,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 5/403- lameness.mov,240,0,0.9292647488415241,-0.2525115800755365,0.43720541050249484
+ensemble,test,83,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 10/404.mov,240,0,0.9298894502222538,-0.13894495155130113,0.4653195383823711
+ensemble,test,93,408,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 4/408.mov,240,0,0.9229056743284066,-0.2718742404665266,0.4324470297195404
+ensemble,test,101,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 29/403-lameness .mov,240,0,0.9110427344838778,-0.2924280102763857,0.42740955413487464
+ensemble,test,112,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 26/404.mov,240,0,0.894376415759325,0.4176211937197617,0.6029138825241928
+ensemble,test,122,408,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 5/408.mov,240,0,0.9373151915768783,-0.32639026641845703,0.41911918527964126
+ensemble,test,130,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Oct 6/403-lameness.mov,240,0,0.92455093562603,-0.2759311156613486,0.4314515982476893
+ensemble,test,140,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 28/404.mov,240,0,0.9291095691422622,-0.12067746264593941,0.4698671942620648
+ensemble,test,149,408,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 8/408.mov,240,0,0.8923432963589827,-0.2952637864010675,0.4267156961611885
+ensemble,test,156,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Oct 6/403-lameness.mov,240,0,0.92452088072896,0.056100869551301,0.5140215400724537
+ensemble,test,166,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 29/404.mov,232,8,0.8946370169006544,-0.17652678383248194,0.45598254962209545
+ensemble,test,174,408,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Sep 8/408.mov,240,0,0.8861744739115238,-0.14658948725887708,0.46341811216001483
+ensemble,test,181,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 4/403-lameness.mov,240,0,0.9210949701567491,-0.23923579709870474,0.440474685109793
+ensemble,test,189,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Oct 6/404.mov,240,0,0.8759177818894386,0.7516149027006966,0.6795304765238923
+ensemble,test,200,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Oct 1/403-lameness.mov,240,0,0.9307845843334993,-0.00640227592417172,0.4983994364860964
+ensemble,test,208,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Nov 7/404.mov,240,0,0.9399790274600188,-0.3068738899060658,0.4238779697035685
+ensemble,test,217,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 8/403- lameness.mov,155,85,0.8546767715484865,0.0497474196766104,0.5124342906537361
+ensemble,test,225,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows before going out/Sep 29/404.mov,240,0,0.9457743840912978,-0.15313470629709108,0.4617909618465388
+ensemble,test,233,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows after exercise/Sep 4/403- lameness.mov,233,7,0.8052203652684781,-0.28159213066101074,0.4300634873155079
+ensemble,test,241,404,0,Healthy,healthy folder,Truro Cow Video Data,healthy cows after exercise/Oct 29/404.mov,240,0,0.9343032829463482,-0.32478043011256624,0.4195111642329031
+ensemble,test,249,403,1,Unhealthy,lameness,Truro Cow Video Data,unhealthy cows before going out/Sep 5/403- lameness.mov,240,0,0.9432695162793,-0.3001083901950291,0.4255309865180837
