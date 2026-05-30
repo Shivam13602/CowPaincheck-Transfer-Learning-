@@ -1,0 +1,303 @@
+{
+  "dataset_version": "thesis_stride8_qa_v5",
+  "manifest": "..\\..\\datasets\\thesis_stride8_qa\\output\\completed_manifest.csv",
+  "seed": 42,
+  "label_column": "video_health_status",
+  "balance_column": "cow_health_status",
+  "test_cows": [
+    "363",
+    "370",
+    "378",
+    "403",
+    "404",
+    "408",
+    "433",
+    "436"
+  ],
+  "test_class_balance": {
+    "healthy": [
+      "370",
+      "404",
+      "408",
+      "436"
+    ],
+    "unhealthy": [
+      "363",
+      "378",
+      "403",
+      "433"
+    ]
+  },
+  "val_cows_per_fold": 4,
+  "per_class_per_fold": 2,
+  "n_folds": 5,
+  "folds": [
+    {
+      "fold": 0,
+      "val_cows": [
+        "354",
+        "402",
+        "415",
+        "428"
+      ],
+      "val_healthy": [
+        "428",
+        "402"
+      ],
+      "val_unhealthy": [
+        "415",
+        "354"
+      ]
+    },
+    {
+      "fold": 1,
+      "val_cows": [
+        "323",
+        "387",
+        "425",
+        "432"
+      ],
+      "val_healthy": [
+        "387",
+        "432"
+      ],
+      "val_unhealthy": [
+        "323",
+        "425"
+      ]
+    },
+    {
+      "fold": 2,
+      "val_cows": [
+        "394",
+        "406",
+        "426",
+        "438"
+      ],
+      "val_healthy": [
+        "406",
+        "426"
+      ],
+      "val_unhealthy": [
+        "394",
+        "438"
+      ]
+    },
+    {
+      "fold": 3,
+      "val_cows": [
+        "310",
+        "405",
+        "421",
+        "439"
+      ],
+      "val_healthy": [
+        "439",
+        "405"
+      ],
+      "val_unhealthy": [
+        "421",
+        "310"
+      ]
+    },
+    {
+      "fold": 4,
+      "val_cows": [
+        "255",
+        "352",
+        "355",
+        "446"
+      ],
+      "val_healthy": [
+        "352",
+        "355"
+      ],
+      "val_unhealthy": [
+        "446",
+        "255"
+      ]
+    }
+  ],
+  "train_only_cows": [
+    "349",
+    "417",
+    "427"
+  ],
+  "per_cow_seq_cap": 12,
+  "capped_cows": [
+    "255",
+    "310",
+    "323",
+    "349",
+    "354",
+    "402",
+    "417",
+    "421",
+    "426",
+    "432"
+  ],
+  "cow_table": {
+    "255": {
+      "health": "Unhealthy",
+      "n_seqs": 25,
+      "role": "val_fold_4"
+    },
+    "310": {
+      "health": "Unhealthy",
+      "n_seqs": 21,
+      "role": "val_fold_3"
+    },
+    "323": {
+      "health": "Unhealthy",
+      "n_seqs": 13,
+      "role": "val_fold_1"
+    },
+    "349": {
+      "health": "Unhealthy",
+      "n_seqs": 87,
+      "role": "train_only"
+    },
+    "352": {
+      "health": "Healthy",
+      "n_seqs": 4,
+      "role": "val_fold_4"
+    },
+    "354": {
+      "health": "Unhealthy",
+      "n_seqs": 41,
+      "role": "val_fold_0"
+    },
+    "355": {
+      "health": "Healthy",
+      "n_seqs": 11,
+      "role": "val_fold_4"
+    },
+    "363": {
+      "health": "Unhealthy",
+      "n_seqs": 6,
+      "role": "test"
+    },
+    "370": {
+      "health": "Healthy",
+      "n_seqs": 24,
+      "role": "test"
+    },
+    "378": {
+      "health": "Unhealthy",
+      "n_seqs": 33,
+      "role": "test"
+    },
+    "387": {
+      "health": "Healthy",
+      "n_seqs": 12,
+      "role": "val_fold_1"
+    },
+    "394": {
+      "health": "Unhealthy",
+      "n_seqs": 10,
+      "role": "val_fold_2"
+    },
+    "402": {
+      "health": "Healthy",
+      "n_seqs": 19,
+      "role": "val_fold_0"
+    },
+    "403": {
+      "health": "Unhealthy",
+      "n_seqs": 10,
+      "role": "test"
+    },
+    "404": {
+      "health": "Healthy",
+      "n_seqs": 5,
+      "role": "test"
+    },
+    "405": {
+      "health": "Healthy",
+      "n_seqs": 9,
+      "role": "val_fold_3"
+    },
+    "406": {
+      "health": "Healthy",
+      "n_seqs": 9,
+      "role": "val_fold_2"
+    },
+    "408": {
+      "health": "Healthy",
+      "n_seqs": 6,
+      "role": "test"
+    },
+    "415": {
+      "health": "Unhealthy",
+      "n_seqs": 6,
+      "role": "val_fold_0"
+    },
+    "417": {
+      "health": "Unhealthy",
+      "n_seqs": 27,
+      "role": "train_only"
+    },
+    "421": {
+      "health": "Unhealthy",
+      "n_seqs": 33,
+      "role": "val_fold_3"
+    },
+    "425": {
+      "health": "Unhealthy",
+      "n_seqs": 3,
+      "role": "val_fold_1"
+    },
+    "426": {
+      "health": "Healthy",
+      "n_seqs": 14,
+      "role": "val_fold_2"
+    },
+    "427": {
+      "health": "Unhealthy",
+      "n_seqs": 12,
+      "role": "train_only"
+    },
+    "428": {
+      "health": "Healthy",
+      "n_seqs": 10,
+      "role": "val_fold_0"
+    },
+    "432": {
+      "health": "Healthy",
+      "n_seqs": 14,
+      "role": "val_fold_1"
+    },
+    "433": {
+      "health": "Unhealthy",
+      "n_seqs": 29,
+      "role": "test"
+    },
+    "436": {
+      "health": "Healthy",
+      "n_seqs": 30,
+      "role": "test"
+    },
+    "438": {
+      "health": "Unhealthy",
+      "n_seqs": 10,
+      "role": "val_fold_2"
+    },
+    "439": {
+      "health": "Healthy",
+      "n_seqs": 7,
+      "role": "val_fold_3"
+    },
+    "446": {
+      "health": "Unhealthy",
+      "n_seqs": 9,
+      "role": "val_fold_4"
+    }
+  },
+  "trainer_args": {
+    "--test-cow-ids": "363,370,378,403,404,408,433,436",
+    "--val-cows-per-fold": 4,
+    "--require-val-both-classes": true,
+    "--cow-balanced-sampler": true
+  },
+  "notes": "Each CV cow is validated exactly once across the K folds (standard K-fold property). Folds are equal sized and class-balanced. Surplus + forced cows are train-only (never validated). The V3 trainers build folds from --test-cow-ids + --val-cows-per-fold (seed 42); to enforce this exact partition deterministically, add a --split-json loader to weak_label_adapt_v3.py / dann_adapt_v3.py (see split_strategy.md, section 'Trainer integration')."
+}
