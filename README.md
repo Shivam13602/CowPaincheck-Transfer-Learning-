@@ -1,51 +1,116 @@
 # CowPaincheck Transfer Learning
 
-Transfer learning experiments adapting the **UCAPS v2.9** cattle facial-pain model (beef cattle, castration pain) to **Canadian Holstein/Jersey dairy** farm video with weak `video_health_status` proxy labels.
+Transfer learning from **UCAPS** (beef cattle, castration-related facial pain) to **Holstein/Jersey dairy** farm video using weak `video_health_status` labels (Healthy vs Unhealthy-proxy).
 
-> **Scope note:** All reported Holstein metrics measure **weak health-proxy separation**, not validated veterinary pain detection. Only UCAPS source metrics use true pain ground truth.
+> **Important:** Holstein metrics measure **disease-context / health-proxy separation**, not validated veterinary pain scores. UCAPS source training uses true pain labels; target domain does not.
 
 Repository: [github.com/Shivam13602/CowPaincheck-Transfer-Learning-](https://github.com/Shivam13602/CowPaincheck-Transfer-Learning-)
 
----
-
-## Abstract
-
-We study domain shift between UCAPS beef-cattle pain recognition and Holstein/Jersey dairy herds recorded at RAC/Truro. After zero-shot and weak-label baselines failed to generalize (cow-level AUC ≈ 0.50), we implemented cow-held-out cross-validation with domain-adversarial training (DANN), covariance alignment (CORAL), and focal/GCE weak-label losses. V3 fixed threshold degeneracy and achieved **sequence AUC 0.577 (CORAL)** on a 250-sequence baseline. V4 extended evaluation to a **549-sequence dense thesis dataset** (10 s windows, 8 s stride), adding video- and cow-level metrics; **weak_focal** reached **cow balanced accuracy 0.75** on the fixed 4-cow test set.
+Extended narrative: [`CowPain Transfer.md`](CowPain%20Transfer.md)
 
 ---
 
-## End-to-end pipeline
+## Latest result (V6 — June 2026)
 
-```mermaid
-flowchart LR
-  rawVideo[Raw farm video] --> yolo[YOLO face crop]
-  yolo --> seq10s[10 s sequences 240 frames]
-  seq10s --> ucaps[UCAPS v2.9 CNN-LSTM-Attn]
-  ucaps --> adapt[SSL / weak-label / DANN-CORAL]
-  adapt --> eval[Cow-held-out CV]
-  eval --> metrics[Seq / video / cow metrics]
-```
+**VastAI autoresearch** on the same **549-sequence / 8-cow held-out test** protocol as V5 ([`dann_transfer/V5/splits/v5_split.json`](dann_transfer/V5/splits/v5_split.json)).
 
-![Pipeline overview](docs/figures/pipeline_overview.png)
+| What we ran | Outcome |
+|-------------|---------|
+| **Stage A** — 4 weak-label heads (focal γ=1.5/2.5, GCE q=0.6/0.8) + **class-balanced** loss, frozen CNN, 80 epochs | **Best: `A_s3_focal_g2p5_cb`** — seq AUC **0.611**, F1 **0.466**, recall **0.533** |
+| **Stage B** — 3 alignment runs (DANN dw 0.15/0.20, CORAL 0.02), no target weak BCE | **Failed on test** — seq AUC ~0.47, **0 TP** at primary threshold |
+
+Full analysis: [`dann_transfer/V6/v6.md`](dann_transfer/V6/v6.md) · Versioned outputs: [`dann_transfer/V6/results/`](dann_transfer/V6/results/)
+
+---
+
+## What we did in V6
+
+1. **Same data and split as V5** — 143 test sequences from 8 cows (4 Healthy + 4 Unhealthy by `cow_health_status`); 5-fold cow CV on 23 train cows; checkpoint `v2.9_20260502_181533`.
+2. **Stage A (loss geometry)** — tested whether **focal loss**, **GCE**, and **effective-number class balancing** fix V5’s weak-label failure (S3 AUC ~0.48).
+3. **Stage B (alignment)** — retested DANN/CORAL with new weights on VastAI; did **not** repeat V5’s best weights (DANN 0.25, CORAL 0.10).
+4. **Evaluation** — built into trainers: sequence / video / cow metrics, threshold sweep, temperature scaling, bootstrap CIs. No separate eval job.
+
+Autoresearch tooling: [`dann_transfer/V6/auto research/`](dann_transfer/V6/auto%20research/)
+
+---
+
+## Results at a glance
+
+### Sequence level (143 test clips, primary threshold τ)
+
+| Trial | Seq AUC | F1 | Recall | TP | FN | FP | TN |
+|-------|--------:|---:|-------:|---:|---:|---:|---:|
+| **A_s3_focal_g2p5_cb** (best) | **0.611** | **0.466** | **0.533** | 24 | 21 | 34 | 64 |
+| A_s3_gce_q0p6_cb | 0.547 | 0.484 | 1.000 | 45 | 0 | 96 | 2 |
+| A_s3_focal_g1p5_cb | 0.543 | 0.385 | 0.444 | 20 | 25 | 39 | 59 |
+| B_s4_dann_dw0p15 (S4) | 0.467 | 0.000 | 0.000 | 0 | 45 | 1 | 97 |
+| V5 best S4 (reference) | 0.593 | 0.366 | 0.333 | 15 | 30 | 22 | 76 |
+
+- **45** test sequences are Unhealthy-proxy; **98** are Healthy-proxy.
+- Best focal run catches **24/45** unhealthy clips but flags **34** healthy clips (high FP).
+- GCE q=0.6 is the opposite failure: **all-positive** (96 FP, 2 TN) at τ≈0.035.
+
+### Cow level (8 held-out cows, sequence-majority / aggregate metrics)
+
+| Cow ID | Health proxy | n seq | Best focal (γ=2.5) — seq positives | Cow-level note |
+|--------|--------------|------:|----------------------------------|----------------|
+| 363 | Unhealthy | 6 | 6/6 flagged | Unhealthy cow fully detected at clip level |
+| 370 | Healthy | 24 | 0/24 | Clean on this cow |
+| 378 | Healthy | 33 | 0/33 | Clean (cow healthy; many clips labeled healthy) |
+| 403 | Unhealthy | 10 | 10/10 flagged | Full recall on clips |
+| 404 | Healthy | 5 | 0/5 | Clean |
+| 408 | Healthy | 6 | 0/6 | Clean |
+| 433 | Unhealthy | 29 | 29/29 flagged | Full recall on clips |
+| 436 | Healthy | 30 | 0/30 | Clean |
+
+Cow AUC on best focal: **0.667** (vs ~0.40 for V5 S4). Bootstrap CIs remain wide (only 8 test cows).
+
+### Disease context (best focal, clip level)
+
+| Condition | % clips flagged positive | Comment |
+|-----------|-------------------------:|---------|
+| possible mastitis | **59%** | Easier proxy pattern |
+| lameness | **44%** | Still under-detected vs mastitis |
+| healthy / healthy folder | **34–36%** | Main FP source |
+
+---
+
+## Main failure modes
+
+| Mode | Where | What happens |
+|------|-------|----------------|
+| **Score compression** | All stages | Sigmoid outputs cluster in a narrow band (~0.33–0.39). Small shifts move many clips across τ → unstable TP/FP. |
+| **Threshold collapse (low)** | GCE q=0.6, V5 BCE | τ too low → predict almost everything Unhealthy (96 FP). |
+| **Threshold collapse (high)** | V6 Stage B, V5 BCE/GCE | τ too high → predict everything Healthy (**0 TP**). |
+| **Val ≠ test** | Stage B, historical S3 | Inner 4-cow val AUC up to **0.89**; 8-cow test AUC **~0.47–0.48**. |
+| **Calibration trap** | S4 / focal | Temperature scaling at primary τ can destroy usable F1; report **raw** metrics. |
+| **Proxy ≠ pain** | Whole project | Model learns herd/disease **context** (mastitis, lameness folders), not graded pain. |
+| **Label noise** | Cow 378 etc. | Cow-level label disagrees with clip-level `video_health_status` on some animals. |
+
+---
+
+## Why transferring “pain signals” is hard here
+
+1. **Domain shift** — UCAPS: controlled beef, castration protocol, expert pain labels. Target: field dairy, different breeds, lighting, and behaviour; labels are **video-level health proxy**, not pain scores.
+2. **Weak labels** — `video_health_status` mixes mastitis, lameness, and healthy folders; it is not equivalent to UCAPS moment/pain taxonomy.
+3. **Subtle facial signal** — Micro-expressions (orbital tightening, ear posture) are low-amplitude and easily drowned by pose, motion blur, and crop quality.
+4. **Small test** — Only **8 cows** and **143** overlapping sequences; metrics have high variance (bootstrap cow AUC CI spans most of [0, 1]).
+5. **Class geometry** — Healthy clips dominate; without **class-balanced** loss (V6 Stage A), models collapse to predict majority class.
+6. **Alignment is not automatic** — V5 showed DANN/CORAL can fix ranking when weights match; V6 Stage B used different weights and **regressed**, showing alignment must be tuned jointly with loss heads.
+
+**Progress:** V6 Stage A proves **loss + class balancing** can exceed V5 alignment on seq AUC; combining that head with V5-quality DANN/CORAL is the next step.
 
 ---
 
 ## Experiment timeline
 
-| Stage | Folder | Dataset | CV protocol | Best seq AUC | Best cow bacc |
-|-------|--------|---------|-------------|-------------:|--------------:|
-| **Phase 0** | [`zeroshot_baseline/`](zeroshot_baseline/) | baseline_10s_250 | Pre-DANN baselines | 0.548 | 0.500 |
-| **V1** | [`dann_transfer/V1/`](dann_transfer/V1/) | baseline_10s_250 | 7×4, Vast.ai | ~0.48 | ~0.50 |
-| **V2** | [`dann_transfer/V2/`](dann_transfer/V2/) | baseline_10s_250 | 14×2, Rorqual | 0.558 | 0.500 |
-| **V3** | [`dann_transfer/V3/`](dann_transfer/V3/) | baseline_10s_250 | 7×4 + spec threshold | **0.577** | 0.750 (DANN cal.) |
-| **V3.1** | [`dann_transfer/V3.1/`](dann_transfer/V3.1/) | baseline_10s_250 | Literature fork | Appendix | Appendix |
-| **V4** | [`dann_transfer/V4/`](dann_transfer/V4/) | thesis_stride8_qa (549) | 9×3 + video metrics | 0.421 | **0.750** (weak_focal) |
-
-Fixed held-out test cows throughout: **363, 403, 404, 408**.
-
-![Experiment timeline](docs/figures/experiment_timeline.png)
-
-Full chronological log: [`dann_transfer/DANN_EXPERIMENT_HISTORY.md`](dann_transfer/DANN_EXPERIMENT_HISTORY.md) · Thesis summary: [`docs/THESIS_PROGRESS_REPORT.md`](docs/THESIS_PROGRESS_REPORT.md)
+| Stage | Folder | Best seq AUC | Report |
+|-------|--------|-------------:|--------|
+| Phase 0 | [`zeroshot_baseline/`](zeroshot_baseline/) | 0.548 | zeroshot README |
+| V3 | [`dann_transfer/V3/`](dann_transfer/V3/) | 0.577 | V3 README |
+| V4 | [`dann_transfer/V4/`](dann_transfer/V4/) | 0.421 | V4 README |
+| V5 | [`dann_transfer/V5/`](dann_transfer/V5/) | 0.593 (S4) | [`v5.md`](dann_transfer/V5/v5.md) |
+| **V6** | [`dann_transfer/V6/`](dann_transfer/V6/) | **0.611 (Stage A)** | [`v6.md`](dann_transfer/V6/v6.md) |
 
 ---
 
@@ -53,76 +118,33 @@ Full chronological log: [`dann_transfer/DANN_EXPERIMENT_HISTORY.md`](dann_transf
 
 ```
 CowPaincheck-Transfer-Learning/
-├── README.md                          ← this file
-├── docs/
-│   ├── DATA_ACCESS.md                 ← how to obtain sequences & checkpoints
-│   ├── THESIS_PROGRESS_REPORT.md
-│   ├── literature_review.md
-│   ├── generate_figures.py            ← regenerate result plots
-│   └── figures/                       ← pipeline & result PNGs
-├── zeroshot_baseline/                 ← Phase 0: zero-shot + weak-label FT
-├── datasets/
-│   ├── baseline_10s_250/              ← 250-seq manifests (frozen baseline)
-│   └── thesis_stride8_qa/             ← 549-seq extraction scripts + manifests
+├── README.md                 ← this file (GitHub landing)
+├── CowPain Transfer.md       ← long-form project overview
+├── docs/                     ← DATA_ACCESS, thesis report, figures
+├── datasets/                 ← manifests (not raw video)
+├── zeroshot_baseline/
 └── dann_transfer/
-    ├── code/                          ← shared Python trainers
-    ├── V1/ … V4/                      ← frozen experiment snapshots
-    ├── V3.1/                          ← literature appendix (parallel track)
-    └── DANN_EXPERIMENT_HISTORY.md
+    ├── V1/ … V5/             ← frozen experiment lines
+    └── V6/                   ← autoresearch + Vast results (June 2026)
+        ├── v6.md
+        ├── results/vast_auto/
+        └── auto research/
 ```
+
+**Data and checkpoints are not in git.** See [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md).
 
 ---
 
-## Datasets
+## Reproduce V6 analysis locally
 
-| Dataset | Sequences | Description | README |
-|---------|----------:|-------------|--------|
-| `baseline_10s_250` | 250 | One 10 s clip per selected video; used in Phase 0–V3 | [`datasets/baseline_10s_250/`](datasets/baseline_10s_250/) |
-| `thesis_stride8_qa` | 549 | 10 s window, 8 s stride, QA-filtered; V4 thesis set | [`datasets/thesis_stride8_qa/`](datasets/thesis_stride8_qa/) |
-
-**Sequences and checkpoints are not committed** (~7+ GB). Manifests and statistics are included. See [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md).
-
----
-
-## Reproduction
-
-**Environment:** Python 3.10+, PyTorch 2.6+, CUDA 12.x. Tested on Vast.ai A100 and Alliance Rorqual H100.
-
-**Example — V3 baseline matrix (Rorqual):**
-
-```bash
-cd dann_transfer
-bash V3/run_v3_baseline_matrix_rorqual.sh
+```powershell
+# After downloading results from Vast (see dann_transfer/V6/scripts/download_results_vast.ps1)
+python dann_transfer/V6/scripts/build_v6_results_analysis.py
+python dann_transfer/V6/scripts/print_v6_leaderboard.py
 ```
-
-**Example — V4 thesis dataset (Rorqual, job 13253646):**
-
-```bash
-bash V4/scripts/run_v3_thesis_stride8_rorqual.sh
-```
-
-**Regenerate figures:**
-
-```bash
-python docs/generate_figures.py
-```
-
----
-
-## Key findings
-
-1. **Direct transfer is weak** — zero-shot proxy AUC ≈ 0.53 on 250 sequences.
-2. **Threshold policy matters** — V2's validation-mean threshold caused all-positive test predictions; V3 pooled thresholding with specificity ≥ 0.5 fixed this.
-3. **CORAL beats DANN on sparse data** — best baseline seq AUC 0.577 (V3); DANN reached better calibrated cow metrics but cow AUC stayed 0.50 (n=4).
-4. **More data ≠ better seq AUC** — V4's 549 overlapping sequences did not improve sequence AUC on the same test cows; weak_focal improved cow-level balanced accuracy to 0.75.
-5. **Proxy labels limit claims** — high inner-fold validation (AUC up to 0.99 on some folds) does not imply deployable pain detection.
 
 ---
 
 ## Citation
 
-If you use this code or reported metrics, please cite the associated thesis work (citation to be added upon publication).
-
-## License
-
-Academic/research use. Contact the repository author for data-sharing agreements on raw video.
+Academic/research use. Citation to be added upon thesis publication.

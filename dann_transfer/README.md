@@ -21,6 +21,8 @@ flowchart LR
 | V3 | [`V3/README.md`](V3/README.md) | Rorqual | **Seq AUC 0.577 (CORAL)** |
 | V3.1 | [`V3.1/README.md`](V3.1/README.md) | Rorqual | Literature fork (appendix) |
 | V4 | [`V4/README.md`](V4/README.md) | Rorqual | Cow bacc **0.75** on 549-seq dataset |
+| V5 | [`V5/README.md`](V5/README.md) | Rorqual | S4 seq AUC **0.593** (8-cow test) |
+| **V6** | [`V6/README.md`](V6/README.md) | VastAI | **Stage A seq AUC 0.611** (focal γ=2.5 + class-balanced) |
 
 ## Canonical code
 

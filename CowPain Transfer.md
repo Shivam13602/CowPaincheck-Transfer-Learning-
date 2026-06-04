@@ -10,7 +10,7 @@ Repository: [github.com/Shivam13602/CowPaincheck-Transfer-Learning-](https://git
 
 ## Abstract
 
-We study domain shift between UCAPS beef-cattle pain recognition and Holstein/Jersey dairy herds recorded at RAC/Truro. After zero-shot and weak-label baselines failed to generalize (cow-level AUC ≈ 0.50), we implemented cow-held-out cross-validation with domain-adversarial training (DANN), covariance alignment (CORAL), and focal/GCE weak-label losses. V3 fixed threshold degeneracy and achieved **sequence AUC 0.577 (CORAL)** on a 250-sequence baseline. V4 extended evaluation to a **549-sequence dense thesis dataset** (10 s windows, 8 s stride), adding video- and cow-level metrics; **weak_focal** reached **cow balanced accuracy 0.75** on the fixed 4-cow test set.
+We study domain shift between UCAPS beef-cattle pain recognition and Holstein/Jersey dairy herds recorded at RAC/Truro. After zero-shot and weak-label baselines failed to generalize (cow-level AUC ≈ 0.50), we implemented cow-held-out cross-validation with domain-adversarial training (DANN), covariance alignment (CORAL), and focal/GCE weak-label losses. V3 fixed threshold degeneracy and achieved **sequence AUC 0.577 (CORAL)** on a 250-sequence baseline. V4 extended evaluation to a **549-sequence dense thesis dataset** (10 s windows, 8 s stride). V5 (8-cow test) showed weak-label S3 near chance but S4 alignment at seq AUC **~0.593**. **V6 autoresearch (June 2026)** added class-balanced focal/GCE heads and reached seq AUC **0.611** on the same 8-cow test—beating V5 ranking—while a partial DANN/CORAL re-sweep on VastAI regressed (threshold collapse, 0 TP).
 
 ---
 
@@ -41,10 +41,13 @@ flowchart LR
 | **V3.1** | [`dann_transfer/V3.1/`](dann_transfer/V3.1/) | baseline_10s_250 | Literature fork | Appendix | Appendix |
 | **V4** | [`dann_transfer/V4/`](dann_transfer/V4/) | thesis_stride8_qa (549) | 9×3 + video metrics | 0.421 | **0.750** (weak_focal) |
 | **V5** | [`dann_transfer/V5/`](dann_transfer/V5/) | 549 interim (732 planned) | **8-cow test + balanced CV** | **S3 ~0.48 AUC** | **S4 ~0.593 AUC** (DANN/CORAL) |
+| **V6** | [`dann_transfer/V6/`](dann_transfer/V6/) | VastAI autoresearch (7 trials) | focal/GCE class-balanced + DANN/CORAL | **A_s3_focal_g2p5_cb** seq AUC **0.611** | see [`v6.md`](dann_transfer/V6/v6.md) |
 
 Fixed held-out test cows V0–V4: **363, 403, 404, 408**. V5 enlarges this to an **8-cow balanced test** (the legacy four plus four more) with class-balanced cow-held-out K-fold (each train cow validated once).
 
 V5 is the strategy/protocol redesign: new complete v2.9 checkpoint set, enlarged dataset, 8-cow test, and a literature-grounded experiment ladder (zero-shot → alignment → weak-label → SSL → few-shot → temporal pooling → calibration → micro-expression stretch → condition-stratified analysis). **549-seq interim (May 2026):** weak-label S3 alone does not transfer; **domain alignment S4** beats the legacy zero-shot floor on sequence AUC — see [`dann_transfer/V5/v5.md`](dann_transfer/V5/v5.md). **No veterinary pain scores exist**; claims are **disease-context discrimination** only. See [`dann_transfer/V5/README.md`](dann_transfer/V5/README.md).
+
+V6 autoresearch on VastAI completed 7 trials (4× Stage A weak-label + 3× Stage B alignment). Best result **`A_s3_focal_g2p5_cb`** (focal γ=2.5, class-balanced) beats V5 S4 on seq AUC; full write-up in [`dann_transfer/V6/v6.md`](dann_transfer/V6/v6.md). Run definitions: [`auto research/`](dann_transfer/V6/auto%20research/).
 
 ![Experiment timeline](docs/figures/experiment_timeline.png)
 
@@ -119,6 +122,7 @@ python docs/generate_figures.py
 3. **CORAL beats DANN on sparse data** — best baseline seq AUC 0.577 (V3); DANN reached better calibrated cow metrics but cow AUC stayed 0.50 (n=4).
 4. **More data ≠ better seq AUC** — V4's 549 overlapping sequences did not improve sequence AUC on the same test cows; weak_focal improved cow-level balanced accuracy to 0.75.
 5. **Proxy labels limit claims** — high inner-fold validation (AUC up to 0.99 on some folds) does not imply deployable pain detection.
+6. **V6: class-balanced focal fixes weak-label ranking** — seq AUC **0.611**, 24/45 unhealthy clips detected at primary τ, but **34 FP** on healthy clips; pain transfer remains hard due to domain shift, weak labels, and score compression (see [`README.md`](README.md)).
 
 ---
 

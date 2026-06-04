@@ -1,0 +1,57 @@
+{
+  "version": "v6_auto_research_vast_v1",
+  "defaults": {
+    "manifest_csv": "/root/data/thesis_stride8/output/completed_manifest.csv",
+    "sequence_root": "/root/data/thesis_stride8/output",
+    "dataset_version": "thesis_stride8_qa_549_interim",
+    "split_json": "/root/CowPaincheck-Transfer-Learning/dann_transfer/V5/splits/v5_split.json",
+    "checkpoint_dir": "/root/data/v2.9_20260502_181533",
+    "source_project_dir": "/root/data/ucaps_source",
+    "source_sequence_dir": "/root/data/ucaps_source/sequence",
+    "out_root": "/root/runs/v6_auto"
+  },
+  "trials": [
+    {
+      "id": "A_s3_focal_g1p5_cb",
+      "stage": "A",
+      "runner": "weak_label_adapt_v3",
+      "args": {"task1_loss": "focal", "focal_gamma": 1.5, "class_balanced": true, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.0001}
+    },
+    {
+      "id": "A_s3_focal_g2p5_cb",
+      "stage": "A",
+      "runner": "weak_label_adapt_v3",
+      "args": {"task1_loss": "focal", "focal_gamma": 2.5, "class_balanced": true, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.0001}
+    },
+    {
+      "id": "A_s3_gce_q0p6_cb",
+      "stage": "A",
+      "runner": "weak_label_adapt_v3",
+      "args": {"task1_loss": "gce", "gce_q": 0.6, "class_balanced": true, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.0001}
+    },
+    {
+      "id": "A_s3_gce_q0p8_cb",
+      "stage": "A",
+      "runner": "weak_label_adapt_v3",
+      "args": {"task1_loss": "gce", "gce_q": 0.8, "class_balanced": true, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.0001}
+    },
+    {
+      "id": "B_s4_dann_dw0p15",
+      "stage": "B",
+      "runner": "dann_adapt_v3",
+      "args": {"alignment_loss": "domain", "domain_weight": 0.15, "source_task1_weight": 1.0, "source_task2_weight": 0.0, "target_weak_weight": 0.0, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.00001}
+    },
+    {
+      "id": "B_s4_dann_dw0p20",
+      "stage": "B",
+      "runner": "dann_adapt_v3",
+      "args": {"alignment_loss": "domain", "domain_weight": 0.20, "source_task1_weight": 1.0, "source_task2_weight": 0.0, "target_weak_weight": 0.0, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.00001}
+    },
+    {
+      "id": "B_s4_coral_w0p02",
+      "stage": "B",
+      "runner": "dann_adapt_v3",
+      "args": {"alignment_loss": "coral", "domain_weight": 0.0, "coral_weight": 0.02, "source_task1_weight": 1.0, "source_task2_weight": 0.0, "target_weak_weight": 0.0, "freeze_cnn": true, "num_epochs": 80, "learning_rate": 0.00001}
+    }
+  ]
+}

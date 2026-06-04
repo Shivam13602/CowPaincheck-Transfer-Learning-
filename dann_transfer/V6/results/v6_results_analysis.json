@@ -1,0 +1,1366 @@
+{
+  "experiment": "V6 autoresearch Vast (549-seq, 8-cow test)",
+  "protocol": {
+    "dataset": "thesis_stride8 549 sequences",
+    "test_cows": [
+      "363",
+      "370",
+      "378",
+      "403",
+      "404",
+      "408",
+      "433",
+      "436"
+    ],
+    "split_json": "V5/splits/v5_split.json",
+    "checkpoint": "v2.9_20260502_181533",
+    "platform": "VastAI A100-40GB",
+    "stage_a": "weak_label_adapt_v3: focal/GCE + class_balanced, freeze_cnn, 80 ep, lr=1e-4",
+    "stage_b": "dann_adapt_v3: DANN/CORAL, no target weak BCE, freeze_cnn, 80 ep, lr=1e-5",
+    "v5_baseline_best_seq_auc": 0.593,
+    "v5_baseline_best_condition": "S4_coral_w_0.10 / S4_dann_dw_0.25"
+  },
+  "conditions": [
+    {
+      "stage": "A",
+      "condition": "A_s3_focal_g2p5_cb",
+      "loss": "focal",
+      "focal_gamma": 2.5,
+      "class_balanced": true,
+      "threshold": 0.36773753876803694,
+      "sequence": {
+        "n": 143,
+        "auc": 0.6106575963718821,
+        "balanced_accuracy": 0.5931972789115646,
+        "balanced_accuracy_opt": 0.64421768707483,
+        "f1": 0.46601941747572817,
+        "f1_opt": 0.48128342245989303,
+        "precision": 0.41379310344827586,
+        "recall": 0.5333333333333333,
+        "threshold": 0.36773753876803694,
+        "tn": 64,
+        "fp": 34,
+        "fn": 21,
+        "tp": 24
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.5384615384615383,
+        "balanced_accuracy": 0.608974358974359,
+        "balanced_accuracy_opt": 0.6794871794871795,
+        "f1": 0.5263157894736842,
+        "f1_opt": 0.48,
+        "precision": 0.38461538461538464,
+        "recall": 0.8333333333333334,
+        "threshold": 0.36773753876803694,
+        "tn": 5,
+        "fp": 8,
+        "fn": 1,
+        "tp": 5
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.6666666666666666,
+        "balanced_accuracy": 0.8,
+        "balanced_accuracy_opt": 0.8,
+        "f1": 0.75,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.6,
+        "recall": 1.0,
+        "threshold": 0.36773753876803694,
+        "tn": 3,
+        "fp": 2,
+        "fn": 0,
+        "tp": 3
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.6106575963718821,
+        "balanced_accuracy": 0.47539682539682543,
+        "balanced_accuracy_opt": 0.64421768707483,
+        "f1": 0.03773584905660377,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.125,
+        "recall": 0.022222222222222223,
+        "threshold": 0.48645493554413843,
+        "tn": 91,
+        "fp": 7,
+        "fn": 44,
+        "tp": 1
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.6666666666666666,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.8,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.48645493554413843,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.6666666666666667,
+        "ci95_low": 0.19999999999999996,
+        "ci95_high": 1.0
+      },
+      "fold_best_val_auc": [
+        0.9148936170212766,
+        0.6514423076923077,
+        0.3565217391304348,
+        0.7199074074074074,
+        0.9490196078431372
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3780980963885942,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.3882483684096885,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.3677346696904092,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.3691987492223177,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.3774578036596486,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3642822819079194,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.3752627323412893,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.3597215755955403,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.37063048516646246,
+          "frac_pred_positive": 0.3448275862068966,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.37027115543143263,
+          "frac_pred_positive": 0.36363636363636365,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.3725360044096714,
+          "frac_pred_positive": 0.4375,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.3752627323412893,
+          "frac_pred_positive": 0.5862068965517241,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    },
+    {
+      "stage": "A",
+      "condition": "A_s3_gce_q0p6_cb",
+      "loss": "gce",
+      "gce_q": 0.6,
+      "class_balanced": true,
+      "threshold": 0.03489577432584301,
+      "sequence": {
+        "n": 143,
+        "auc": 0.5471655328798186,
+        "balanced_accuracy": 0.5102040816326531,
+        "balanced_accuracy_opt": 0.5882086167800453,
+        "f1": 0.4838709677419355,
+        "f1_opt": 0.34210526315789475,
+        "precision": 0.3191489361702128,
+        "recall": 1.0,
+        "threshold": 0.03489577432584301,
+        "tn": 2,
+        "fp": 96,
+        "fn": 0,
+        "tp": 45
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.6025641025641025,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.6346153846153846,
+        "f1": 0.48,
+        "f1_opt": 0.5,
+        "precision": 0.3157894736842105,
+        "recall": 1.0,
+        "threshold": 0.03489577432584301,
+        "tn": 0,
+        "fp": 13,
+        "fn": 0,
+        "tp": 6
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.6666666666666666,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.8,
+        "f1": 0.5454545454545454,
+        "f1_opt": 0.5714285714285714,
+        "precision": 0.375,
+        "recall": 1.0,
+        "threshold": 0.03489577432584301,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 3
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.5471655328798186,
+        "balanced_accuracy": 0.5761904761904761,
+        "balanced_accuracy_opt": 0.5882086167800453,
+        "f1": 0.5064935064935064,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.3577981651376147,
+        "recall": 0.8666666666666667,
+        "threshold": 0.4177572227072026,
+        "tn": 28,
+        "fp": 70,
+        "fn": 6,
+        "tp": 39
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.6666666666666666,
+        "balanced_accuracy": 0.6,
+        "balanced_accuracy_opt": 0.8,
+        "f1": 0.6,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.42857142857142855,
+        "recall": 1.0,
+        "threshold": 0.4177572227072026,
+        "tn": 1,
+        "fp": 4,
+        "fn": 0,
+        "tp": 3
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.6666666666666667,
+        "ci95_low": 0.19999999999999998,
+        "ci95_high": 1.0
+      },
+      "fold_best_val_auc": [
+        0.8686720469552458,
+        0.7932692307692307,
+        0.7652173913043478,
+        0.7037037037037037,
+        0.8901960784313726
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.0447335246286667,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.073590081790884,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.0445913448106926,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.06868348220856,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.0503399792031923,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.0382755096830025,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.0502421732027423,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.0386576324931044,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.050544888695714975,
+          "frac_pred_positive": 0.9770114942528736,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.04375935946490698,
+          "frac_pred_positive": 1.0,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.059702248116100004,
+          "frac_pred_positive": 1.0,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.05024217320274235,
+          "frac_pred_positive": 1.0,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    },
+    {
+      "stage": "A",
+      "condition": "A_s3_focal_g1p5_cb",
+      "loss": "focal",
+      "focal_gamma": 1.5,
+      "class_balanced": true,
+      "threshold": 0.33041988740395545,
+      "sequence": {
+        "n": 143,
+        "auc": 0.543310657596372,
+        "balanced_accuracy": 0.5232426303854876,
+        "balanced_accuracy_opt": 0.5626984126984127,
+        "f1": 0.38461538461538464,
+        "f1_opt": 0.4945054945054945,
+        "precision": 0.3389830508474576,
+        "recall": 0.4444444444444444,
+        "threshold": 0.33041988740395545,
+        "tn": 59,
+        "fp": 39,
+        "fn": 25,
+        "tp": 20
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.5897435897435898,
+        "balanced_accuracy": 0.5641025641025641,
+        "balanced_accuracy_opt": 0.641025641025641,
+        "f1": 0.47058823529411764,
+        "f1_opt": 0.48,
+        "precision": 0.36363636363636365,
+        "recall": 0.6666666666666666,
+        "threshold": 0.33041988740395545,
+        "tn": 6,
+        "fp": 7,
+        "fn": 2,
+        "tp": 4
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.6666666666666666,
+        "balanced_accuracy": 0.8,
+        "balanced_accuracy_opt": 0.8,
+        "f1": 0.75,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.6,
+        "recall": 1.0,
+        "threshold": 0.33041988740395545,
+        "tn": 3,
+        "fp": 2,
+        "fn": 0,
+        "tp": 3
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.543310657596372,
+        "balanced_accuracy": 0.4958049886621315,
+        "balanced_accuracy_opt": 0.5626984126984127,
+        "f1": 0.04081632653061224,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.25,
+        "recall": 0.022222222222222223,
+        "threshold": 0.4823501520658355,
+        "tn": 95,
+        "fp": 3,
+        "fn": 44,
+        "tp": 1
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.6666666666666666,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.8,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4823501520658355,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.6666666666666667,
+        "ci95_low": 0.19999999999999996,
+        "ci95_high": 1.0
+      },
+      "fold_best_val_auc": [
+        0.9141599413059428,
+        0.7932692307692308,
+        0.4260869565217392,
+        0.7326388888888888,
+        0.919607843137255
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3482321230948238,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.3541615372651971,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.3286662072726516,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.3322531846457072,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.3389119666449732,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3074053983675937,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.3326693685885076,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.317833336348589,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.3319639290209185,
+          "frac_pred_positive": 0.41379310344827586,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.3217265657664026,
+          "frac_pred_positive": 0.2727272727272727,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.33824528656412595,
+          "frac_pred_positive": 0.4375,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.3326693685885077,
+          "frac_pred_positive": 0.4482758620689655,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    },
+    {
+      "stage": "A",
+      "condition": "A_s3_gce_q0p8_cb",
+      "loss": "gce",
+      "gce_q": 0.8,
+      "class_balanced": true,
+      "threshold": 0.01711663730791305,
+      "sequence": {
+        "n": 143,
+        "auc": 0.5126984126984127,
+        "balanced_accuracy": 0.5325396825396825,
+        "balanced_accuracy_opt": 0.5469387755102041,
+        "f1": 0.3838383838383838,
+        "f1_opt": 0.0,
+        "precision": 0.35185185185185186,
+        "recall": 0.4222222222222222,
+        "threshold": 0.01711663730791305,
+        "tn": 63,
+        "fp": 35,
+        "fn": 26,
+        "tp": 19
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.46153846153846156,
+        "balanced_accuracy": 0.4423076923076923,
+        "balanced_accuracy_opt": 0.5769230769230769,
+        "f1": 0.35294117647058826,
+        "f1_opt": 0.0,
+        "precision": 0.2727272727272727,
+        "recall": 0.5,
+        "threshold": 0.01711663730791305,
+        "tn": 5,
+        "fp": 8,
+        "fn": 3,
+        "tp": 3
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.5333333333333333,
+        "balanced_accuracy": 0.43333333333333335,
+        "balanced_accuracy_opt": 0.7333333333333334,
+        "f1": 0.4444444444444444,
+        "f1_opt": 0.0,
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "threshold": 0.01711663730791305,
+        "tn": 1,
+        "fp": 4,
+        "fn": 1,
+        "tp": 2
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.5126984126984127,
+        "balanced_accuracy": 0.5325396825396825,
+        "balanced_accuracy_opt": 0.5469387755102041,
+        "f1": 0.3838383838383838,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.35185185185185186,
+        "recall": 0.4222222222222222,
+        "threshold": 0.4001010743238176,
+        "tn": 63,
+        "fp": 35,
+        "fn": 26,
+        "tp": 19
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.5333333333333333,
+        "balanced_accuracy": 0.43333333333333335,
+        "balanced_accuracy_opt": 0.7333333333333334,
+        "f1": 0.4444444444444444,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "threshold": 0.4001010743238176,
+        "tn": 1,
+        "fp": 4,
+        "fn": 1,
+        "tp": 2
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.5333333333333333,
+        "ci95_low": 0.0,
+        "ci95_high": 1.0
+      },
+      "fold_best_val_auc": [
+        0.879677182685253,
+        0.1225961538461538,
+        0.8347826086956521,
+        0.6990740740740741,
+        0.7686274509803921
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.0167785932420679,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.0221416155622968,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.0172100318140116,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.0194465180133564,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.0174694445054183,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.0174857628491368,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.0176069163056093,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.0168951971566153,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.018461905035126038,
+          "frac_pred_positive": 0.3563218390804598,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.01747834542017385,
+          "frac_pred_positive": 0.36363636363636365,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.018446046224123238,
+          "frac_pred_positive": 0.125,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.01760691630560928,
+          "frac_pred_positive": 0.5862068965517241,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    },
+    {
+      "stage": "B",
+      "condition": "B_s4_coral_w0p02",
+      "alignment": "coral",
+      "coral_weight": 0.02,
+      "threshold": 0.4636303425916419,
+      "sequence": {
+        "n": 143,
+        "auc": 0.47029478458049884,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5586167800453514,
+        "f1": 0.0,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4636303425916419,
+        "tn": 98,
+        "fp": 0,
+        "fn": 45,
+        "tp": 0
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.423076923076923,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5576923076923077,
+        "f1": 0.0,
+        "f1_opt": 0.48,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4636303425916419,
+        "tn": 13,
+        "fp": 0,
+        "fn": 6,
+        "tp": 0
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.3333333333333333,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5333333333333333,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4636303425916419,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.47029478458049884,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5586167800453514,
+        "f1": 0.4787234042553192,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.3146853146853147,
+        "recall": 1.0,
+        "threshold": 0.4711519192859819,
+        "tn": 0,
+        "fp": 98,
+        "fn": 0,
+        "tp": 45
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.3333333333333333,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5333333333333333,
+        "f1": 0.5454545454545454,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.375,
+        "recall": 1.0,
+        "threshold": 0.4711519192859819,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 3
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.3125,
+        "ci95_low": 0.0,
+        "ci95_high": 0.8333333333333334
+      },
+      "fold_best_val_auc": [
+        0.8855465884079237,
+        0.3413461538461538,
+        0.35,
+        0.8055555555555556,
+        0.7117647058823529
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3452873923079298,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.3829738004476599,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.3573060121089995,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.3595822735775337,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.3602973783167705,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3683960350628469,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.36442134455789,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.3539400309917502,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.36322609816199225,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.364714827450994,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.35422169310143226,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.36442134455789005,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    },
+    {
+      "stage": "B",
+      "condition": "B_s4_dann_dw0p20",
+      "alignment": "dann",
+      "domain_weight": 0.2,
+      "threshold": 0.46296545610695283,
+      "sequence": {
+        "n": 143,
+        "auc": 0.47006802721088436,
+        "balanced_accuracy": 0.4846938775510204,
+        "balanced_accuracy_opt": 0.5586167800453514,
+        "f1": 0.0,
+        "f1_opt": 0.4838709677419355,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.46296545610695283,
+        "tn": 95,
+        "fp": 3,
+        "fn": 45,
+        "tp": 0
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.41025641025641024,
+        "balanced_accuracy": 0.46153846153846156,
+        "balanced_accuracy_opt": 0.5576923076923077,
+        "f1": 0.0,
+        "f1_opt": 0.48,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.46296545610695283,
+        "tn": 12,
+        "fp": 1,
+        "fn": 6,
+        "tp": 0
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.3333333333333333,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5333333333333333,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.46296545610695283,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.47006802721088436,
+        "balanced_accuracy": 0.47630385487528343,
+        "balanced_accuracy_opt": 0.5586167800453514,
+        "f1": 0.07142857142857142,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.18181818181818182,
+        "recall": 0.044444444444444446,
+        "threshold": 0.4851199293288364,
+        "tn": 89,
+        "fp": 9,
+        "fn": 43,
+        "tp": 2
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.3333333333333333,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5333333333333333,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4851199293288364,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.3125,
+        "ci95_low": 0.0,
+        "ci95_high": 0.8333333333333334
+      },
+      "fold_best_val_auc": [
+        0.8950843727072635,
+        0.3413461538461538,
+        0.3521739130434783,
+        0.7800925925925926,
+        0.7098039215686274
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3574448974948159,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.3974857924790584,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.3703259305595859,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.3720906062931433,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.373793363578366,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3824035490729331,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.3782651299876642,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.3668581644629433,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.3766225248488739,
+          "frac_pred_positive": 0.034482758620689655,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.3784898283935844,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.3665984654937705,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.37826512998766415,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    },
+    {
+      "stage": "B",
+      "condition": "B_s4_dann_dw0p15",
+      "alignment": "dann",
+      "domain_weight": 0.15,
+      "threshold": 0.4629704891646762,
+      "sequence": {
+        "n": 143,
+        "auc": 0.4671201814058957,
+        "balanced_accuracy": 0.49489795918367346,
+        "balanced_accuracy_opt": 0.5535147392290249,
+        "f1": 0.0,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4629704891646762,
+        "tn": 97,
+        "fp": 1,
+        "fn": 45,
+        "tp": 0
+      },
+      "video": {
+        "n": 19,
+        "auc": 0.41025641025641024,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5576923076923077,
+        "f1": 0.0,
+        "f1_opt": 0.48,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4629704891646762,
+        "tn": 13,
+        "fp": 0,
+        "fn": 6,
+        "tp": 0
+      },
+      "cow": {
+        "n": 8,
+        "auc": 0.3333333333333333,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5333333333333333,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4629704891646762,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "calibrated_sequence": {
+        "n": 143,
+        "auc": 0.4671201814058957,
+        "balanced_accuracy": 0.47630385487528343,
+        "balanced_accuracy_opt": 0.5535147392290249,
+        "f1": 0.07142857142857142,
+        "f1_opt": 0.4787234042553192,
+        "precision": 0.18181818181818182,
+        "recall": 0.044444444444444446,
+        "threshold": 0.4838626319201932,
+        "tn": 89,
+        "fp": 9,
+        "fn": 43,
+        "tp": 2
+      },
+      "calibrated_cow": {
+        "n": 8,
+        "auc": 0.3333333333333333,
+        "balanced_accuracy": 0.5,
+        "balanced_accuracy_opt": 0.5333333333333333,
+        "f1": 0.0,
+        "f1_opt": 0.5454545454545454,
+        "precision": 0.0,
+        "recall": 0.0,
+        "threshold": 0.4838626319201932,
+        "tn": 5,
+        "fp": 0,
+        "fn": 3,
+        "tp": 0
+      },
+      "cow_bootstrap_auc_ci": {
+        "median": 0.3125,
+        "ci95_low": 0.0,
+        "ci95_high": 0.8333333333333334
+      },
+      "fold_best_val_auc": [
+        0.8936170212765957,
+        0.3413461538461538,
+        0.3521739130434783,
+        0.7939814814814814,
+        0.7098039215686274
+      ],
+      "test_cows": [
+        {
+          "cow_id": "363",
+          "target": 1,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3490123953577894,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "370",
+          "target": 0,
+          "n_seq": 24,
+          "pain_prob_mean": 0.3887770767812711,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "378",
+          "target": 0,
+          "n_seq": 33,
+          "pain_prob_mean": 0.3619032698936932,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "403",
+          "target": 1,
+          "n_seq": 10,
+          "pain_prob_mean": 0.3637246745125032,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "404",
+          "target": 0,
+          "n_seq": 5,
+          "pain_prob_mean": 0.3651000827901461,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "408",
+          "target": 0,
+          "n_seq": 6,
+          "pain_prob_mean": 0.3737306235743087,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "433",
+          "target": 1,
+          "n_seq": 29,
+          "pain_prob_mean": 0.369488685213209,
+          "pred": 0,
+          "correct": false
+        },
+        {
+          "cow_id": "436",
+          "target": 0,
+          "n_seq": 30,
+          "pain_prob_mean": 0.3584858310835238,
+          "pred": 0,
+          "correct": false
+        }
+      ],
+      "disease_breakdown": [
+        {
+          "group": "healthy",
+          "n_seq": 87,
+          "mean_prob": 0.3681383066867597,
+          "frac_pred_positive": 0.011494252873563218,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "healthy folder",
+          "n_seq": 11,
+          "mean_prob": 0.3698076504905984,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 0.0
+        },
+        {
+          "group": "lameness",
+          "n_seq": 16,
+          "mean_prob": 0.35820756982948554,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 1.0
+        },
+        {
+          "group": "possible mastitis",
+          "n_seq": 29,
+          "mean_prob": 0.36948868521320893,
+          "frac_pred_positive": 0.0,
+          "label_positive_rate": 1.0
+        }
+      ],
+      "n_test_sequences": 143
+    }
+  ]
+}

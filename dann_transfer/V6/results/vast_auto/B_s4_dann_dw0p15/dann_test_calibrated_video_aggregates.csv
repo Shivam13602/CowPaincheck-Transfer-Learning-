@@ -1,0 +1,20 @@
+video_key,n_sequences,cow_id,dataset_root,relative_path,target_mean,pain_prob,positives,target
+Truro Cow Video Data::healthy cows after exercise/Sep 29/404.mov,1,404,Truro Cow Video Data,healthy cows after exercise/Sep 29/404.mov,0.0,0.48184832596524624,0,0
+Truro Cow Video Data::healthy cows before going out/Oct 6/404.mov,4,404,Truro Cow Video Data,healthy cows before going out/Oct 6/404.mov,0.0,0.4776096689963334,0,0
+Truro Cow Video Data::healthy cows before going out/Sep 4/408.mov,1,408,Truro Cow Video Data,healthy cows before going out/Sep 4/408.mov,0.0,0.484849012631172,0,0
+Truro Cow Video Data::healthy cows before going out/Sep 8/408.mov,5,408,Truro Cow Video Data,healthy cows before going out/Sep 8/408.mov,0.0,0.47890071440545495,0,0
+Truro Cow Video Data::unhealthy cows after exercise/Nov 28/363-lameness.mov,6,363,Truro Cow Video Data,unhealthy cows after exercise/Nov 28/363-lameness.mov,1.0,0.47574388897271835,6,1
+Truro Cow Video Data::unhealthy cows after exercise/Oct 6/403-lameness.mov,7,403,Truro Cow Video Data,unhealthy cows after exercise/Oct 6/403-lameness.mov,1.0,0.4767132107830177,7,1
+Truro Cow Video Data::unhealthy cows after exercise/Sep 5/403- lameness.mov,3,403,Truro Cow Video Data,unhealthy cows after exercise/Sep 5/403- lameness.mov,1.0,0.4816273181207535,3,1
+"Yashan Dhaliwal RAC Data 2025::10 March 2025/During exercise/378/Video 2025-03-10, 7 01 58 AM.mov",7,378,Yashan Dhaliwal RAC Data 2025,"10 March 2025/During exercise/378/Video 2025-03-10, 7 01 58 AM.mov",0.0,0.4760733276357452,0,0
+"Yashan Dhaliwal RAC Data 2025::10 March 2025/During exercise/433/Video 2025-03-10, 6 56 17 AM.mov",9,433,Yashan Dhaliwal RAC Data 2025,"10 March 2025/During exercise/433/Video 2025-03-10, 6 56 17 AM.mov",1.0,0.4776755478596793,9,1
+"Yashan Dhaliwal RAC Data 2025::12 March 2025/After exercise/433/Video 2025-03-12, 8 15 27 AM.mov",11,433,Yashan Dhaliwal RAC Data 2025,"12 March 2025/After exercise/433/Video 2025-03-12, 8 15 27 AM.mov",1.0,0.47967968868523064,11,1
+"Yashan Dhaliwal RAC Data 2025::19 Feb 2025/After Exercise/378/Video 2025-02-19, 9 46 39 AM.mov",17,378,Yashan Dhaliwal RAC Data 2025,"19 Feb 2025/After Exercise/378/Video 2025-02-19, 9 46 39 AM.mov",0.0,0.47712112726122285,0,0
+"Yashan Dhaliwal RAC Data 2025::20 Feb 2025/Before Exercise/436/Video 2025-02-20, 8 32 57 AM.mov",10,436,Yashan Dhaliwal RAC Data 2025,"20 Feb 2025/Before Exercise/436/Video 2025-02-20, 8 32 57 AM.mov",0.0,0.4776245388601871,0,0
+"Yashan Dhaliwal RAC Data 2025::21 Feb 2025/After Exercise/370/Video 2025-02-21, 9 55 13 AM.mov",16,370,Yashan Dhaliwal RAC Data 2025,"21 Feb 2025/After Exercise/370/Video 2025-02-21, 9 55 13 AM.mov",0.0,0.4786004332540268,0,0
+"Yashan Dhaliwal RAC Data 2025::21 Feb 2025/After Exercise/436/Video 2025-02-21, 9 58 30 AM.mov",9,436,Yashan Dhaliwal RAC Data 2025,"21 Feb 2025/After Exercise/436/Video 2025-02-21, 9 58 30 AM.mov",0.0,0.47791296013336637,0,0
+"Yashan Dhaliwal RAC Data 2025::24 Feb 2025/During Exercise/370/Video 2025-02-24, 9 44 01 AM.mov",5,370,Yashan Dhaliwal RAC Data 2025,"24 Feb 2025/During Exercise/370/Video 2025-02-24, 9 44 01 AM.mov",0.0,0.49303857092132797,0,0
+"Yashan Dhaliwal RAC Data 2025::28 Feb 2025/After Exercise/378/Video 2025-02-28, 9 54 22 AM.mov",9,378,Yashan Dhaliwal RAC Data 2025,"28 Feb 2025/After Exercise/378/Video 2025-02-28, 9 54 22 AM.mov",0.0,0.48082236885279656,0,0
+"Yashan Dhaliwal RAC Data 2025::7 March 2025/During Exercise/433/Video 2025-03-07, 7 11 43 AM.mov",9,433,Yashan Dhaliwal RAC Data 2025,"7 March 2025/During Exercise/433/Video 2025-03-07, 7 11 43 AM.mov",1.0,0.48007436270711357,9,1
+"Yashan Dhaliwal RAC Data 2025::March 19 2025/Before Exercise/370/Video 2025-03-19, 7 00 34 AM.mov",3,370,Yashan Dhaliwal RAC Data 2025,"March 19 2025/Before Exercise/370/Video 2025-03-19, 7 00 34 AM.mov",0.0,0.48408413230419517,0,0
+"Yashan Dhaliwal RAC Data 2025::March 19 2025/During exercise/436/Video 2025-03-19, 7 39 56 AM.mov",11,436,Yashan Dhaliwal RAC Data 2025,"March 19 2025/During exercise/436/Video 2025-03-19, 7 39 56 AM.mov",0.0,0.47663680806666214,0,0

@@ -2,6 +2,8 @@
 **/sequences/
 **/output/sequences/
 *.tar
+*.tgz
+**/v6_results_reports.tgz
 *.pt
 best.pt
 
